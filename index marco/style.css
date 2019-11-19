@@ -145,9 +145,129 @@ body { background: #221; }
 }
 
 
+.container{
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pricing-table{
+  background: #f1f1f1;
+  flex: 1;
+  margin: 10px;
+  text-transform: uppercase;
+}
+
+.pricing-header{
+  color: #fff;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.Rebr{
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.Rebr span{
+  font-size: 30px;
+}
+
+.title{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+  width: 80%;
+  max-width: 360px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
+.pricing-list{
+  
+list-style:none;
+margin-left:0;
+padding-left:0;
+  padding: 10px 20px;
+}
+
+.pricing-list li{
+  margin: 8px 0;
+  font-size: 14px;
+  color: #344;
+  text-align: center;
+}
+
+.border{
+  width: 80px;
+  height: 1px;
+  background: #ddd;
+  margin: auto;
+}
+
+.pricing-table a{
+  display: block;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 14px;
+  border: 1px solid;
+  max-width: 360px;
+  transition: .2s linear;
+}
+.pricing-table a:hover{
+  border-radius: 30px;
+}
+.table1 .pricing-header{
+  background: #2980b9;
+}
+.table2 .pricing-header{
+  background: #2c3e50;
+}
+.table3 .pricing-header{
+  background: #c0392b;
+}
+
+
+.table1 a{
+  color: #2980b9;
+}
+.table2 a{
+  color: #2c3e50;
+}
+.table3 a{
+  color: #c0392b;
+}
+
+.table1 a:hover{
+  background: #2980b9;
+  color: #fff;
+}
+.table2 a:hover{
+  background: #2c3e50;
+  color: #fff;
+}
+.table3 a:hover{
+  background: #c0392b;
+  color: #fff;
+}
+
 
 @media screen and (max-width:800px) {
   
+  .pricing-table{
+    flex: 100%;
+  }
+
 body { background: #221; }
 #slidy-container { 
   width: 100%; overflow: hidden; margin: 0 auto;
