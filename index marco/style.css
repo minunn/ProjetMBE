@@ -1,11 +1,43 @@
 
+body { background: #221; }
+#slidy-container { 
+  width: 70%; overflow: hidden; margin: 0 auto;
+}
+#slidy img {
+  height:650px;
+  float: left;
+  width: 20%;
+}
+#slidy {
+  z-index: -5;
+  text-align: left;
+  margin: 0;
+  font-size: 0;
+  width: 500%;
+}
+
+#slidy { text-align: left; margin: 0; font-size: 0; position: absolute; width: 500%;  }
+#slidy img { float: left; width: 20%; }
+@keyframes slidy {
+18.75% { left: -0%; }
+25% { left: -100%; }
+43.75% { left: -100%; }
+50% { left: -200%; }
+68.75% { left: -200%; }
+75% { left: -300%; }
+93.75% { left: -300%; }
+100% { left: -400%; }
+}
+#slidy { left: 0%; transform: translate3d(0,0,0); animation: 16s slidy infinite; }
+
 #slider {
-	overflow: hidden;
+  overflow: hidden;
+  
 }
 #slider figure {
   position:relative;
   z-index: -5;
-	width: 500%;
+	width: 850%;
 	margin: 0;
   left: 0;
 	animation: 20s slider infinite;
@@ -29,19 +61,19 @@
 		left: -100%;
 	}
 	50% {
-		left: -200%;
+		left: -300%;
 	}
 	70% {
-		left: -200%;
+		left: -400%;
 	}
 	75% {
-		left: -300%;
+		left: -500%;
 	}
 	95% {
-		left: -300%;
+		left: -500%;
 	}
 	100% {
-		left: -400%;
+		left: -700%;
 	}
 }
 
@@ -98,7 +130,6 @@
 #chk{
   position: absolute;
   visibility: hidden;
-  z-index: -1111;
 }
 
 .content{
@@ -116,6 +147,39 @@
 
 
 @media screen and (max-width:800px) {
+  
+body { background: #221; }
+#slidy-container { 
+  width: 100%; overflow: hidden; margin: 0 auto;
+}
+#slidy img {
+  height:500px;
+  float: left;
+  width: 20%;
+}
+#slidy {
+  
+  z-index: -5;
+  text-align: left;
+  margin: 0;
+  font-size: 0;
+  width: 500%;
+}
+
+#slidy {text-align: left; margin: 0; font-size: 0; position: relative; width: 500%;   }
+#slidy img { float: left; width: 20%; }
+@keyframes slidy {
+18.75% { left: -0%; }
+25% { left: -100%; }
+43.75% { left: -100%; }
+50% { left: -200%; }
+68.75% { left: -200%; }
+75% { left: -300%; }
+93.75% { left: -300%; }
+100% { left: -400%; }
+}
+#slidy { left: 0%; transform: translate3d(0,0,0); animation: 16s slidy infinite; }
+
   .show-menu-btn,.hide-menu-btn{
     display: block;
   }
@@ -147,12 +211,14 @@
 
 
   #slider {
+    max-width: 100%;
+    max-height: 100%;
     overflow: hidden;
   }
   #slider figure {
     position:relative;
-    z-index: -5;
-    width: 1000%;
+    z-index: -5;  width: auto;
+    height: auto;
     margin: 0;
     left: 0;
     animation: 20s slider infinite;
