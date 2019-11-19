@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="all.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  <script type="text/javascript" src="index marco/test.js"></script>
+</head> 
+
+<body>
+
+  <div class="header">
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="#">accueil</a>
+      <a href="#">Services</a>
+      <a href="#">Qui sommes nous ?</a>
+      <a href="#">Tarifs</a>
+      <a href="#">Partenaires</a>
+      <a href="#">Mention legales</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+
+  <div id="slidy-container">
+    <figure id="slidy">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/eyes.jpg" alt="eyes" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lou.jpg" alt="lou" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie-2.jpg" alt="lucie-2" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" >
+    </figure>
+  </div>
+
+  <p>
+    Nos 3 menu 
+  </p>
+  </div>
+
+</body>
+<script type="text/javascript">
+  var slides = document.getElementsByClassName("slide");
+  var index = 0;
+
+  function goLeft() {
+    if (index == 0) index = slides.length - 1;
+    else index--;
+
+    slides[0].style.marginLeft = "-" + index * 600 + "px";
+  }
+
+  function goRight() {
+    if (index == slides.length - 1) index = 0;
+    else index++;
+
+    slides[0].style.marginLeft = "-" + index * 600 + "px";
+  }
+
+  setInterval(goRight, 5000)
+</Script>
+
+</html>
