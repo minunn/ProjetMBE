@@ -8,11 +8,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-  <script type="text/javascript" src="index marco/test.js"></script>
-</head> 
+  <script type="text/javascript" src="javascript/test.js"></script>
+</head>
 
 <body>
-
+<!-- Menu en haut de page -->
   <div class="header">
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
@@ -31,27 +31,38 @@
       </label>
     </ul>
   </div>
-
+<!-- Slidder de la page -->
   <div id="slidy-container">
     <figure id="slidy">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/eyes.jpg" alt="eyes" >
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lou.jpg" alt="lou" >
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie-2.jpg" alt="lucie-2" >
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" >
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie" >
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/eyes.jpg" alt="eyes">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lou.jpg" alt="lou">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie-2.jpg" alt="lucie-2">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie">
+      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie">
     </figure>
   </div>
+  <!-- Flèche qui permet d'aller vers le bas -->
+  <a id="godown"href="#down"><center><img src="img/down.png" height="100px" width="100px" /></center>
+  </a>
+  <div id="down">
+    </div>
+    <!-- Nos 3 Rubriques -->
   <div class="container">
     <div class="pricing-table table1">
       <div class="pricing-header">
-        <div class="Rebr"><span><center>Intervention Rapides</center></span></div>
+        <div class="Rebr"><span>
+            <center>Intervention Rapides</center>
+          </span></div>
         <div class="title"></div>
       </div>
       <ul class="pricing-list">
-        <li>Electricité</li>
+          <center><img src="img/elec.jpg" height="50px" width="50px" /></center>
+          <li>Electricité</li>
         <div class="border"></div>
+        <center><img src="img/Clim.png" height="50px" width="50px" /></center>
         <li>Climatisation</li>
         <div class="border"></div>
+        <center><img src="img/key.png" height="50px" width="50px" /></center>
         <li>Serrurerie</li>
       </ul>
       <a href="#">Voir nos interventions rapides</a>
@@ -59,14 +70,19 @@
 
     <div class="pricing-table table2">
       <div class="pricing-header">
-        <div class="Rebr"><span><center>Intervention Rapides</center></span></div>
+        <div class="Rebr"><span>
+            <center>Installations</center>
+          </span></div>
         <div class="title"></div>
       </div>
       <ul class="pricing-list">
-        <li>Electricité</li>
+          <center><img src="img/elec.jpg" height="50px" width="50px" /></center>
+          <li>Electricité</li>
         <div class="border"></div>
+        <center><img src="img/Clim.png" height="50px" width="50px" /></center>
         <li>Climatisation</li>
         <div class="border"></div>
+        <center><img src="img/key.png" height="50px" width="50px" /></center>
         <li>Serrurerie</li>
       </ul>
       <a href="#">Voir nos interventions rapides</a>
@@ -74,21 +90,27 @@
 
     <div class="pricing-table table3">
       <div class="pricing-header">
-        <div class="Rebr"><span><center>Intervention Rapides</center></span></div>
+        <div class="Rebr"><span>
+            <center>Contrat de maintenance</center>
+          </span></div>
         <div class="title"></div>
       </div>
       <ul class="pricing-list">
-        <li>Electricité</li>
-        <div class="border"></div>
+        <center><img src="img/Clim.png" height="50px" width="50px" /></center>
         <li>Climatisation</li>
         <div class="border"></div>
-        <li>Serrurerie</li>
+        <center><img src="img/portail.png" height="50px" width="50px" /></center>
+        <li>Portail, autre</li>
+        <div class="border"></div>
+        <center><img src="img/interphone.png" height="50px" width="50px" /></center>
+        <li>Interphone</li>
       </ul>
       <a href="#">Voir nos interventions rapides</a>
     </div>
   </div>
 
 </body>
+<!-- Permet de faire des boutons sur le slidder aller à droite ou à gauche -->
 <script type="text/javascript">
   var slides = document.getElementsByClassName("slide");
   var index = 0;
