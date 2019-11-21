@@ -1,179 +1,181 @@
 /* Partie footer  */
 
- 
-/* The footer is fixed to the bottom of the page */
- 
 
- 
- 
-.footer-distributed{
-	background-color: #2c292f;
-	box-sizing: border-box;
-	width: 100%;
-	text-align: left;
-	font: bold 16px sans-serif;
-	padding: 50px 50px 60px 50px;
-	margin-top: 80px;
+/* The footer is fixed to the bottom of the page */
+
+
+
+
+.footer-distributed {
+  background-color: #2c292f;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 50px 50px 60px 50px;
+  margin-top: 80px;
 }
- 
+
 .footer-distributed .footer-left,
 .footer-distributed .footer-center,
-.footer-distributed .footer-right{
-	display: inline-block;
-	vertical-align: top;
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top;
 }
- 
+
 /* Footer left */
- 
-.footer-distributed .footer-left{
-	width: 30%;
+
+.footer-distributed .footer-left {
+  width: 30%;
 }
- 
-.footer-distributed h3{
-	color:  #ffffff;
-	font: normal 36px 'Cookie', cursive;
-	margin: 0;
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
 }
- 
+
 /* The company logo */
- 
-.footer-distributed .footer-left img{
-	width: 30%;
+
+.footer-distributed .footer-left img {
+  width: 30%;
 }
- 
-.footer-distributed h3 span{
-	color:  #e0ac1c;
+
+.footer-distributed h3 span {
+  color: #e0ac1c;
 }
- 
+
 /* Footer links */
- 
-.footer-distributed .footer-links{
-	color:  #ffffff;
-	margin: 20px 0 12px;
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
 }
- 
-.footer-distributed .footer-links a{
-	display:inline-block;
-	line-height: 1.8;
-	text-decoration: none;
-	color:  inherit;
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
 }
- 
-.footer-distributed .footer-company-name{
-	color:  #8f9296;
-	font-size: 14px;
-	font-weight: normal;
-	margin: 0;
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
 }
- 
+
 /* Footer Center */
- 
-.footer-distributed .footer-center{
-	width: 35%;
+
+.footer-distributed .footer-center {
+  width: 35%;
 }
- 
- 
-.footer-distributed .footer-center i{
-	background-color:  #33383b;
-	color: #ffffff;
-	font-size: 25px;
-	width: 38px;
-	height: 38px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 42px;
-	margin: 10px 15px;
-	vertical-align: middle;
+
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
 }
- 
-.footer-distributed .footer-center i.fa-envelope{
-	font-size: 17px;
-	line-height: 38px;
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
 }
- 
-.footer-distributed .footer-center p{
-	display: inline-block;
-	color: #ffffff;
-	vertical-align: middle;
-	margin:0;
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
 }
- 
-.footer-distributed .footer-center p span{
-	display:block;
-	font-weight: normal;
-	font-size:14px;
-	line-height:2;
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
 }
- 
-.footer-distributed .footer-center p a{
-	color:  #e0ac1c;
-	text-decoration: none;;
+
+.footer-distributed .footer-center p a {
+  color: #e0ac1c;
+  text-decoration: none;
+  ;
 }
- 
- 
+
+
 /* Footer Right */
- 
-.footer-distributed .footer-right{
-	width: 30%;
+
+.footer-distributed .footer-right {
+  width: 30%;
 }
- 
-.footer-distributed .footer-company-about{
-	line-height: 20px;
-	color:  #92999f;
-	font-size: 13px;
-	font-weight: normal;
-	margin: 0;
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
 }
- 
-.footer-distributed .footer-company-about span{
-	display: block;
-	color:  #ffffff;
-	font-size: 18px;
-	font-weight: bold;
-	margin-bottom: 20px;
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
- 
-.footer-distributed .footer-icons{
-	margin-top: 25px;
+
+.footer-distributed .footer-icons {
+  margin-top: 25px;
 }
- 
-.footer-distributed .footer-icons a{
-	display: inline-block;
-	width: 35px;
-	height: 35px;
-	cursor: pointer;
-	background-color:  #33383b;
-	border-radius: 2px;
- 
-	font-size: 20px;
-	color: #ffffff;
-	text-align: center;
-	line-height: 35px;
- 
-	margin-right: 3px;
-	margin-bottom: 5px;
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
 }
- 
+
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */
- 
- 
+
+
 @media (max-width: 880px) {
- 
-	.footer-distributed .footer-left,
-	.footer-distributed .footer-center,
-	.footer-distributed .footer-right{
-		display: block;
-		width: 100%;
-		margin-bottom: 40px;
-		text-align: center;
-	}
- 
-	.footer-distributed .footer-center i{
-		margin-left: 0;
-	}
- 
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
 }
+
 /*===============================================Background=================================================================================================================================== */
 
 body {
@@ -183,12 +185,12 @@ body {
 /*===============================================Flèche qui va vert le bas=================================================================================================================================== */
 
 html {
-  
+
   scroll-behavior: smooth;
 }
 
 a {
-  
+
   text-decoration: none;
   color: black;
 }
@@ -197,13 +199,13 @@ a {
 #godown {
   display: inline-block;
   padding: 0.35em 1.2em;
-  margin:0 0.3em 0.3em 0;
-  border-radius:0.12em;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
   box-sizing: border-box;
-  text-decoration:none;
-  font-family:'Roboto',sans-serif;
-  font-weight:300;
-  text-align:center;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
   transition: all 0.2s;
   color: white;
   position: absolute;
@@ -368,13 +370,15 @@ a {
 
 
 .container {
-  
+
   max-width: 1500px;
   margin: auto;
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
 }
+
+
 
 .pricing-table {
   background: #f1f1f1;
@@ -443,14 +447,9 @@ a {
 
 .pricing-table a {
   display: block;
-  width: 80%;
-  margin: auto;
-  margin-bottom: 20px;
-  text-align: center;
-  padding: 8px 0;
+  width: 100%;
+  height: 100%;
   font-size: 14px;
-  border: 1px solid;
-  max-width: 360px;
   transition: .2s linear;
 }
 
@@ -469,6 +468,7 @@ a {
 .table3 .pricing-header {
   background: #02a5ce;
 }
+
 
 
 .table1 a {
@@ -492,21 +492,21 @@ a {
   overflow: auto;
 
   border-radius: 10px;
-  background: #202020;
+  background: #0abdd4;
   color: #fff;
 }
 
 .table2 a:hover {
 
   border-radius: 10px;
-  background: #202020;
+  background: #0abdd4;
   color: #fff;
 }
 
 .table3 a:hover {
 
   border-radius: 10px;
-  background: #202020;
+  background: #0abdd4;
   color: #fff;
 }
 
@@ -517,8 +517,13 @@ a {
 
 @media screen and (max-width:800px) {
 
-	footer { position: static; }
-	header { padding-top:40px; }
+  footer {
+    position: static;
+  }
+
+  header {
+    padding-top: 40px;
+  }
 
   /*=============================================== PARTIE DES 3 TABLEAUX=================================================================================================================================== */
 
@@ -614,20 +619,13 @@ a {
 
   .pricing-table a {
     display: block;
-    width: 80%;
-    margin: auto;
-    margin-bottom: 20px;
-    text-align: center;
-    padding: 8px 0;
+    width: 100%;
+    height: 100%;
     font-size: 14px;
-    border: 1px solid;
-    max-width: 360px;
     transition: .2s linear;
   }
 
-  .pricing-table a:hover {
-    border-radius: 30px;
-  }
+  .pricing-table a:hover {}
 
   .table1 .pricing-header {
     background: #02a5ce;
@@ -655,19 +653,17 @@ a {
   }
 
   .table1 a:hover {
-    resize: 500px;
-    overflow: auto;
-    background: #2980b9;
+    background: #0abdd4;
     color: #fff;
   }
 
   .table2 a:hover {
-    background: #2c3e50;
+    background: #0abdd4;
     color: #fff;
   }
 
   .table3 a:hover {
-    background: #c0392b;
+    background: #0abdd4;
     color: #fff;
   }
 
@@ -702,15 +698,15 @@ a {
 
   #godown {
     padding: 0.35em 1.2em;
-    border-radius:0.12em;
+    border-radius: 0.12em;
     box-sizing: border-box;
-    text-decoration:none;
-    font-family:'Roboto',sans-serif;
-    font-weight:300;
-    text-align:center;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
     transition: all 0.2s;
-    display:block;
-    margin:0.4em auto;
+    display: block;
+    margin: 0.4em auto;
     color: white;
     position: absolute;
     top: 60%;
