@@ -6,12 +6,16 @@ body{
   padding: 0;
   font-family: "montserrat",sans-serif;
 }
+/*La bande*/
 .header{
   height: 100px;
   background: #34495e;
   padding: 0 20px;
   color: #fff;
 }
+/******************************************************************************************************/
+
+/* Menu du site web */
 .logo{
   line-height: 100px;
   float: left;
@@ -56,6 +60,13 @@ body{
 .content{
   padding: 0 20px;
 }
+.imagembe{
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  right:0px;
+}
+/*Version mobile menu*/
 
 @media screen and (max-width:800px) {
   .show-menu-btn,.hide-menu-btn{
@@ -86,9 +97,15 @@ body{
   #chk:checked ~ .menu{
     right: 0;
   }
+  .imagembe{
+  visibility: hidden;
+  
+  }
 
 }
+/********************************************************************************************************/
 
+/*Tableaux pour les trois rubriques*/
 .pricing-table{
   flex: 1;
   margin: 40px;
@@ -100,6 +117,7 @@ body{
 .pricing-header{
   color: #fff;
   border-radius: 10px;
+
 }
 
 .price{
@@ -191,23 +209,26 @@ ul {
   background: #2c3e50;
   color: #fff;
 }
-
+.container{
+  max-width: 950px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+/* Pour la version mobile*/
 @media screen and (max-width:780px) {
   .pricing-table{
     flex: 100%;
   }
 }
+/*******************************************************************************************************/
+/* Pour les icones des tableaux*/
 .image{
 	width: 40px;
   height: 40px;
 }
-.para{
-  color:#2c3e50;
-  font-size:20px;
-  position: absolute;
-  bottom:0px;
-  left: 50px;
-}
+/******************************************************************************************************/
+/*Pour le slider*/
 #slider {
 	overflow: hidden;
 }
@@ -252,9 +273,13 @@ ul {
 		left: -400%;
 	}
 }
+/***************************************************************************************************/
+
+/*Centrer le texte (en bas de page)*/
 .centre{
   text-align: center;
 }
+/*Boutons des réseaux sociaux*/
 .btn{
   display: inline-block;
   width: 50px;
@@ -303,11 +328,4 @@ ul {
     left: -10%;
   }
 }
-
-.container{
-  max-width: 999px;
-  margin: auto;
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-}
+/***************/
