@@ -155,6 +155,33 @@
   margin-bottom: 5px;
 }
 
+.Quali-img {
+  
+  max-width: 1500px;
+  margin: auto;
+  padding: 40px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Quali-img  a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  transition: .2s linear;
+}
+
+.Quali-img a:hover {
+  border-radius: 30px;
+}
+
+
+
+
+
+
+
 /* Here is the code for Responsive Footer */
 /* You can remove below code if you don't want Footer to be responsive */
 
@@ -220,74 +247,50 @@ a {
 }
 
 /*===============================================Slidder de la page =================================================================================================================================== */
-
-#slidy-container {
-  width: 100%;
-  overflow: hidden;
-  margin: 0 auto;
+#slider {
+	overflow: hidden;
+}
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	animation: 20s slider infinite;
+}
+#slider figure img {
+	width: 20%;
+	float: left;
 }
 
-#slidy img {
-  height: 650px;
-  float: left;
-  width: 20%;
+@keyframes slider {
+	0% {
+		left: 0;
+	}
+	20% {
+		left: 0;
+	}
+	25% {
+		left: -100%;
+	}
+	45% {
+		left: -100%;
+	}
+	50% {
+		left: -200%;
+	}
+	70% {
+		left: -200%;
+	}
+	75% {
+		left: -300%;
+	}
+	95% {
+		left: -300%;
+	}
+	100% {
+		left: -400%;
+	}
 }
-
-#slidy {
-  z-index: -5;
-  text-align: left;
-  margin: 0;
-  font-size: 0;
-  width: 500%;
-}
-
-#slidy {
-  text-align: left;
-  margin: 0;
-  font-size: 0;
-  position: relative;
-  width: 500%;
-}
-
-#slidy img {
-  float: left;
-  width: 20%;
-}
-
-@keyframes slidy {
-  18.75% {
-    left: -0%;
-  }
-
-  25% {
-    left: -100%;
-  }
-
-  43.75% {
-    left: -100%;
-  }
-
-  50% {
-    left: -200%;
-  }
-
-  68.75% {
-    left: -200%;
-  }
-
-  75% {
-    left: -300%;
-  }
-
-  93.75% {
-    left: -300%;
-  }
-
-  100% {
-    left: -400%;
-  }
-}
-
 /*===============================================Menu du haut=================================================================================================================================== */
 
 
@@ -515,7 +518,7 @@ a {
 /*=============================================== PARTIE MOBILE=================================================================================================================================== */
 
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:1100px) {
 
   footer {
     position: static;
