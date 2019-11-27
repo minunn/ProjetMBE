@@ -1,6 +1,11 @@
 /* Partie footer  */
 
 
+
+
+
+
+
 /* The footer is fixed to the bottom of the page */
 
 
@@ -42,7 +47,7 @@
 }
 
 .footer-distributed h3 span {
-  color: #e0ac1c;
+  color: #ffffff;
 }
 
 /* Footer links */
@@ -106,7 +111,7 @@
 }
 
 .footer-distributed .footer-center p a {
-  color: #e0ac1c;
+  color: #1c6ae0;
   text-decoration: none;
   ;
 }
@@ -247,7 +252,7 @@ a {
 }
 
 /*===============================================Slidder de la page =================================================================================================================================== */
-#slider {
+/*#slider {
 	overflow: hidden;
 }
 #slider figure {
@@ -290,7 +295,158 @@ a {
 	100% {
 		left: -400%;
 	}
+*/
+
+body,html{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    width: 100%;
+    height: 100%;
 }
+
+.section-top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(image_1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 50s infinite;
+}
+
+.content{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.content h1{
+    color:white;
+    font-size:60px;
+    letter-spacing: 16px;
+
+}
+
+.content a {
+    padding: 10px 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+border-radius: 20px;
+}
+
+p{
+    font-size: 20px;
+    padding: 10px;
+    line-height: 24px;
+}
+
+@keyframes slide{
+    0%{
+        background-image: url(image_1.jpg);
+    }
+    10%{
+        background-image: url(image_2.jpg);
+    }
+    20%{
+        background-image: url(image_3.jpg);
+    }
+    30%{
+        background-image: url(image_4.jpg);
+    }
+    40%{
+        background-image: url(image_5.jpg);
+    }
+    50%{
+        background-image: url(image_6.jpg);
+    }
+    60%{
+        background-image: url(image_7.jpg);
+    }
+}
+
+
+
+
+#section03 a {
+  padding-top: 60px;
+}
+#section03 a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: -23px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  box-sizing: border-box;
+}
+#section03 a span::after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  content: '';
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  box-sizing: border-box;
+}
+#section03 a span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  content: '';
+  width: 70px;
+  height: 70px;
+  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  border-radius: 100%;
+  opacity: 0;
+  -webkit-animation: sdb03 3s infinite;
+  animation: sdb03 3s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb03 {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 /*===============================================Menu du haut=================================================================================================================================== */
 
 
@@ -314,7 +470,7 @@ a {
 }
 
 .menu {
-  float: left;
+  float: right;
   line-height: 75px;
 }
 
@@ -323,20 +479,20 @@ a {
   color: rgb(0, 0, 0);
   text-transform: uppercase;
   text-decoration: none;
-  padding: 0 10px;
+  padding: 0 30px;
   transition: 0.4s;
 }
 
 .show-menu-btn,
 .hide-menu-btn {
   transition: 0.4s;
-  font-size: 30px;
+  font-size: 25px;
   cursor: pointer;
   display: none;
 }
 
 .show-menu-btn {
-  float: left;
+  float: right;
 }
 
 .show-menu-btn i {
@@ -678,7 +834,48 @@ a {
 
 
 
-
+  #slider {
+    overflow: hidden;
+  }
+  #slider figure {
+    position: relative;
+    width: 500%;
+    animation: 20s slider infinite;
+  }
+  #slider figure img {
+    width: 20%;
+    float: left;
+  }
+  
+  @keyframes slider {
+    0% {
+      left: 0;
+    }
+    20% {
+      left: 0;
+    }
+    25% {
+      left: -100%;
+    }
+    45% {
+      left: -100%;
+    }
+    50% {
+      left: -200%;
+    }
+    70% {
+      left: -200%;
+    }
+    75% {
+      left: -300%;
+    }
+    95% {
+      left: -300%;
+    }
+    100% {
+      left: -400%;
+    }
+  }
 
 
 
@@ -726,79 +923,6 @@ a {
   /*=============================================== PARTIE Slidder=================================================================================================================================== */
 
 
-  #slidy-container {
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-  }
-
-  #slidy img {
-    height: 500px;
-    float: left;
-    width: 20%;
-  }
-
-  #slidy {
-
-    z-index: -5;
-    text-align: left;
-    margin: 0;
-    font-size: 0;
-    width: 500%;
-  }
-
-  #slidy {
-    text-align: left;
-    margin: 0;
-    font-size: 0;
-    position: relative;
-    width: 500%;
-  }
-
-  #slidy img {
-    float: left;
-    width: 20%;
-  }
-
-  @keyframes slidy {
-    18.75% {
-      left: -0%;
-    }
-
-    25% {
-      left: -100%;
-    }
-
-    43.75% {
-      left: -100%;
-    }
-
-    50% {
-      left: -200%;
-    }
-
-    68.75% {
-      left: -200%;
-    }
-
-    75% {
-      left: -300%;
-    }
-
-    93.75% {
-      left: -300%;
-    }
-
-    100% {
-      left: -400%;
-    }
-  }
-
-  #slidy {
-    left: 0%;
-    transform: translate3d(0, 0, 0);
-    animation: 16s slidy infinite;
-  }
 
   /*================================================================================================================================================================================== */
 
@@ -839,65 +963,6 @@ a {
     right: 0;
   }
 
-
-  #slider {
-    max-width: 100%;
-    max-height: 100%;
-    overflow: hidden;
-  }
-
-  #slider figure {
-    position: relative;
-    z-index: -5;
-    width: auto;
-    height: auto;
-    margin: 0;
-    left: 0;
-    animation: 20s slider infinite;
-  }
-
-  #slider figure img {
-    width: 20%;
-    float: left;
-  }
-
-  @keyframes slider {
-    0% {
-      left: 0;
-    }
-
-    20% {
-      left: 0;
-    }
-
-    25% {
-      left: -100%;
-    }
-
-    45% {
-      left: -100%;
-    }
-
-    50% {
-      left: -200%;
-    }
-
-    70% {
-      left: -200%;
-    }
-
-    75% {
-      left: -300%;
-    }
-
-    95% {
-      left: -300%;
-    }
-
-    100% {
-      left: -400%;
-    }
-  }
 
   /*================================================================================================================================================================================== */
 
