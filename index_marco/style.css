@@ -1,16 +1,7 @@
+/*================================================================================================================================================================================== */
+/*PARTIE FOOTER ==================================================*/
+/*================================================================================================================================================================================== */
 /* Partie footer  */
-
-
-
-
-
-
-
-/* The footer is fixed to the bottom of the page */
-
-
-
-
 .footer-distributed {
   background-color: #2c292f;
   box-sizing: border-box;
@@ -28,7 +19,7 @@
   vertical-align: top;
 }
 
-/* Footer left */
+/* Footer partie gauche */
 
 .footer-distributed .footer-left {
   width: 30%;
@@ -40,17 +31,8 @@
   margin: 0;
 }
 
-/* The company logo */
 
-.footer-distributed .footer-left img {
-  width: 30%;
-}
-
-.footer-distributed h3 span {
-  color: #ffffff;
-}
-
-/* Footer links */
+/* Liens du footer */
 
 .footer-distributed .footer-links {
   color: #ffffff;
@@ -71,7 +53,7 @@
   margin: 0;
 }
 
-/* Footer Center */
+/* Footer Centre */
 
 .footer-distributed .footer-center {
   width: 35%;
@@ -111,13 +93,13 @@
 }
 
 .footer-distributed .footer-center p a {
-  color: #1c6ae0;
+  color: ##97c5eb;
   text-decoration: none;
   ;
 }
 
 
-/* Footer Right */
+/* Footer partie droite */
 
 .footer-distributed .footer-right {
   width: 30%;
@@ -160,8 +142,10 @@
   margin-bottom: 5px;
 }
 
+/* Partie image Quali du footer */
+
 .Quali-img {
-  
+
   max-width: 1500px;
   margin: auto;
   padding: 40px;
@@ -169,7 +153,7 @@
   flex-wrap: wrap;
 }
 
-.Quali-img  a {
+.Quali-img a {
   display: block;
   width: 100%;
   height: 100%;
@@ -181,201 +165,112 @@
   border-radius: 30px;
 }
 
-
-
-
-
-
-
-/* Here is the code for Responsive Footer */
-/* You can remove below code if you don't want Footer to be responsive */
-
-
-@media (max-width: 880px) {
-
-  .footer-distributed .footer-left,
-  .footer-distributed .footer-center,
-  .footer-distributed .footer-right {
-    display: block;
-    width: 100%;
-    margin-bottom: 40px;
-    text-align: center;
-  }
-
-  .footer-distributed .footer-center i {
-    margin-left: 0;
-  }
-
-}
-
-/*===============================================Background=================================================================================================================================== */
-
+/*================================================================================================================================================================================== */
+/*BACKGROUND DE LA PAGE================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
 body {
-  background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/motifs.jpg);
+width: 100%;
 }
 
-/*===============================================Flèche qui va vert le bas=================================================================================================================================== */
-
+/*================================================================================================================================================================================== */
+/*Flèche qui va vers le bas================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
 html {
 
   scroll-behavior: smooth;
 }
 
-a {
-
-  text-decoration: none;
-  color: black;
+/*================================================================================================================================================================================== */
+/*Slidder de la page================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
+  
 }
 
+.section-top {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: slide 50s infinite;
+  
+}
 
-#godown {
-  display: inline-block;
-  padding: 0.35em 1.2em;
-  margin: 0 0.3em 0.3em 0;
-  border-radius: 0.12em;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  transition: all 0.2s;
-  color: white;
+.content {
   position: absolute;
   top: 80%;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  text-align: center;
+  
 }
 
-#down {
-  margin-top: 0%;
-  padding-bottom: 0%;
-}
-
-/*===============================================Slidder de la page =================================================================================================================================== */
-/*#slider {
-	overflow: hidden;
-}
-#slider figure {
-	position: relative;
-	width: 500%;
-	margin: 0;
-	left: 0;
-	animation: 20s slider infinite;
-}
-#slider figure img {
-	width: 20%;
-	float: left;
-}
-
-@keyframes slider {
-	0% {
-		left: 0;
-	}
-	20% {
-		left: 0;
-	}
-	25% {
-		left: -100%;
-	}
-	45% {
-		left: -100%;
-	}
-	50% {
-		left: -200%;
-	}
-	70% {
-		left: -200%;
-	}
-	75% {
-		left: -300%;
-	}
-	95% {
-		left: -300%;
-	}
-	100% {
-		left: -400%;
-	}
-*/
-
-body,html{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    width: 100%;
-    height: 100%;
-}
-
-.section-top{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    position: relative;
-    background-image: url(image_1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    animation: slide 50s infinite;
-}
-
-.content{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.content h1{
-    color:white;
-    font-size:60px;
-    letter-spacing: 16px;
-
+.content h1 {
+  color: white;
+  font-size: 60px;
+  letter-spacing: 16px;
 }
 
 .content a {
-    padding: 10px 24px;
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-border-radius: 20px;
+  padding: 10px 24px;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+  
 }
 
-p{
-    font-size: 20px;
-    padding: 10px;
-    line-height: 24px;
+p {
+  font-size: 20px;
+  padding: 10px;
+  line-height: 24px;
 }
 
-@keyframes slide{
-    0%{
-        background-image: url(image_1.jpg);
-    }
-    10%{
-        background-image: url(image_2.jpg);
-    }
-    20%{
-        background-image: url(image_3.jpg);
-    }
-    30%{
-        background-image: url(image_4.jpg);
-    }
-    40%{
-        background-image: url(image_5.jpg);
-    }
-    50%{
-        background-image: url(image_6.jpg);
-    }
-    60%{
-        background-image: url(image_7.jpg);
-    }
+@keyframes slide {
+  0% {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_1.jpg);
+  }
+
+  15% {
+    background-image:linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),   url(img/image_2.jpg);
+  }
+
+  25% {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_3.jpg);
+  }
+
+  35% {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_4.jpg);
+  }
+
+  45% {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_5.jpg);
+  }
+
+  55% {
+    background-image:linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),   url(img/image_6.jpg);
+  }
+
+  65% {
+    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_7.jpg);
+  }
 }
-
-
-
 
 #section03 a {
   padding-top: 60px;
 }
+
 #section03 a span {
   position: absolute;
   top: 0;
@@ -386,7 +281,9 @@ p{
   border: 1px solid #fff;
   border-radius: 100%;
   box-sizing: border-box;
+  
 }
+
 #section03 a span::after {
   position: absolute;
   top: 50%;
@@ -401,6 +298,7 @@ p{
   transform: rotate(-45deg);
   box-sizing: border-box;
 }
+
 #section03 a span::before {
   position: absolute;
   top: 0;
@@ -409,46 +307,57 @@ p{
   content: '';
   width: 70px;
   height: 70px;
-  box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
   border-radius: 100%;
   opacity: 0;
   -webkit-animation: sdb03 3s infinite;
   animation: sdb03 3s infinite;
   box-sizing: border-box;
 }
+
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0;
   }
+
   30% {
     opacity: 1;
   }
+
   60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }
 }
+
 @keyframes sdb03 {
   0% {
     opacity: 0;
+    
   }
+
   30% {
     opacity: 1;
   }
+
   60% {
-    box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+    box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
     opacity: 0;
   }
+
   100% {
     opacity: 0;
+    
   }
 }
 
-/*===============================================Menu du haut=================================================================================================================================== */
-
+/*================================================================================================================================================================================== */
+/*MENU HAUT DE PAGE================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
 
 * {
   margin: 0;
@@ -510,8 +419,15 @@ p{
   visibility: hidden;
 }
 
-/*===============================================LES 3 RUBRIQUES=================================================================================================================================== */
+/*================================================================================================================================================================================== */
+/*LES 3 RUBRIQUES================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
 
+
+a {
+  text-decoration: none;
+  color: black;
+}
 
 .content {
   padding: 0 20px;
@@ -525,6 +441,9 @@ p{
 
 .content p {
   text-align: justify;
+  border-width: thin;
+  border-style: solid;
+  border-color: orange;
 }
 
 
@@ -540,20 +459,27 @@ p{
 
 
 .pricing-table {
-  background: #f1f1f1;
-  flex: 1;
-  margin: 50px;
-  text-transform: uppercase;
-
-  border-radius: 10px;
+  background-repeat: no-repeat;
+    background-size:cover;
+    flex: 1;
+    margin: 60px;
+    text-transform: uppercase;
+  
+    border-radius: 10px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
 }
 
 .pricing-header {
 
   z-index: 0;
   border-radius: 10px;
-  color: #fff;
+  color: black;
   margin-bottom: 20px;
+  border-width: 2,5px;
+  border-style: solid;
+  border-color: black;
 
 }
 
@@ -568,7 +494,7 @@ p{
 }
 
 .Rebr span {
-  font-size: 30px;
+  font-size: 17px;
 }
 
 .title {
@@ -582,8 +508,15 @@ p{
   font-size: 14px;
 }
 
-.pricing-list {
+  
+.border {
+  width: 80px;
+  height: 1px;
+  background:black;
+  margin: auto;
+}
 
+.pricing-list {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -614,18 +547,19 @@ p{
 
 .pricing-table a:hover {
   border-radius: 30px;
+  border-color: black;
 }
 
 .table1 .pricing-header {
-  background: #02a5ce;
+  background: white;
 }
 
 .table2 .pricing-header {
-  background: #02a5ce;
+  background: white;
 }
 
 .table3 .pricing-header {
-  background: #02a5ce;
+  background: white;
 }
 
 
@@ -651,30 +585,49 @@ p{
   overflow: auto;
 
   border-radius: 10px;
-  background: #0abdd4;
+  background: #ffffff;
   color: #fff;
 }
 
 .table2 a:hover {
 
   border-radius: 10px;
-  background: #0abdd4;
+  background: #ffffff;
   color: #fff;
 }
 
 .table3 a:hover {
 
   border-radius: 10px;
-  background: #0abdd4;
+  background: #ffffff;
   color: #fff;
 }
 
-/*=============================================== PARTIE MOBILE=================================================================================================================================== */
-/*=============================================== PARTIE MOBILE=================================================================================================================================== */
-/*=============================================== PARTIE MOBILE=================================================================================================================================== */
+/*================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
+/*PARTIE MOBILE================================================================================================================================================================================== */
+/*============================PARTIE MOBILE===================================================================================================================================================== */
+/*PARTILE MOBILE================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
 
+
+
+
+
+/*================================================================================================================================================================================== */
+/*mobile screen 1100px en dessous = partie mobile================================================================================================================================================================================== */
+/*================================================================================================================================================================================== */
 
 @media screen and (max-width:1100px) {
+
+  /*================================================================================================================================================================================== */
+  /*Partie foooter ================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
 
   footer {
     position: static;
@@ -684,8 +637,23 @@ p{
     padding-top: 40px;
   }
 
-  /*=============================================== PARTIE DES 3 TABLEAUX=================================================================================================================================== */
 
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0;
+  }
+
+  /*================================================================================================================================================================================== */
+  /*LES 3 RUBRIQUES================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
 
   .content {
     padding: 0 20px;
@@ -699,32 +667,42 @@ p{
 
   .content p {
     text-align: justify;
+    border-width: thin;
+		border-style: solid;
+		border-color: orange;
   }
 
 
   .container {
-    max-width: 2000px;
+    max-width: 1500px;
     margin: auto;
-    padding: 00px;
+    padding: 40px;
     display: flex;
     flex-wrap: wrap;
   }
 
   .pricing-table {
-    background: #f1f1f1;
+    background-repeat: no-repeat;
+    background-size:cover;
     flex: 1;
-    margin: 20px;
+    margin: 60px;
     text-transform: uppercase;
-
+  
     border-radius: 10px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
   }
 
   .pricing-header {
 
+    z-index: 0;
     border-radius: 10px;
-    color: #fff;
-    position: relative;
+    color: black;
     margin-bottom: 20px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
 
   }
 
@@ -734,7 +712,7 @@ p{
     align-items: center;
     justify-content: center;
     padding: 40px 0;
-
+  
     border-radius: 10px;
   }
 
@@ -753,6 +731,14 @@ p{
     padding: 8px 0;
     font-size: 14px;
   }
+
+  .border {
+    width: 80px;
+    height: 1px;
+    background:black;
+    margin: auto;
+  }
+  
 
   .pricing-list {
 
@@ -784,45 +770,48 @@ p{
     transition: .2s linear;
   }
 
-  .pricing-table a:hover {}
+  .pricing-table a:hover {
+    
+    border-color: black;
+  }
 
   .table1 .pricing-header {
-    background: #02a5ce;
+    background: white;
   }
 
   .table2 .pricing-header {
-    background: #02a5ce;
+    background: white;
   }
 
   .table3 .pricing-header {
-    background: #02a5ce;
+    background: white;
   }
 
 
   .table1 a {
-    color: #2980b9;
+    color: #ffffff;
   }
 
   .table2 a {
-    color: #2980b9;
+    color: #ffffff;
   }
 
   .table3 a {
-    color: #2980b9;
+    color: #ffffff;
   }
 
   .table1 a:hover {
-    background: #0abdd4;
+    background: #ffffff;
     color: #fff;
   }
 
   .table2 a:hover {
-    background: #0abdd4;
+    background: #ffffff;
     color: #fff;
   }
 
   .table3 a:hover {
-    background: #0abdd4;
+    background: #ffffff;
     color: #fff;
   }
 
@@ -831,61 +820,20 @@ p{
   }
 
   /*================================================================================================================================================================================== */
-
-
-
-  #slider {
-    overflow: hidden;
-  }
-  #slider figure {
-    position: relative;
-    width: 500%;
-    animation: 20s slider infinite;
-  }
-  #slider figure img {
-    width: 20%;
-    float: left;
-  }
-  
-  @keyframes slider {
-    0% {
-      left: 0;
-    }
-    20% {
-      left: 0;
-    }
-    25% {
-      left: -100%;
-    }
-    45% {
-      left: -100%;
-    }
-    50% {
-      left: -200%;
-    }
-    70% {
-      left: -200%;
-    }
-    75% {
-      left: -300%;
-    }
-    95% {
-      left: -300%;
-    }
-    100% {
-      left: -400%;
-    }
-  }
-
-
-
-  /*=============================================== Background de la page=================================================================================================================================== */
+  /*Background de la page================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
 
   body {
-    background: linear-gradient(rgb(255, 255, 255)rgb(255, 255, 255)5));
-  }
+   background-image: linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/motifs.jpg);
+   }
 
-  /*=============================================== Flèche qui va vers le bas=================================================================================================================================== */
+
+   .logo {
+     position: absolute;
+   }
+  /*================================================================================================================================================================================== */
+  /*flèche qui va vers le bas================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
 
   html {
     scroll-behavior: smooth;
@@ -920,13 +868,10 @@ p{
   }
 
   /*================================================================================================================================================================================== */
-  /*=============================================== PARTIE Slidder=================================================================================================================================== */
-
-
-
+  /*Partie menu du haut================================================================================================================================================================================== */
   /*================================================================================================================================================================================== */
 
-  /*=============================================== PARTIE Menu du haut=================================================================================================================================== */
+
 
   .show-menu-btn,
   .hide-menu-btn {
@@ -962,9 +907,4 @@ p{
   #chk:checked~.menu {
     right: 0;
   }
-
-
-  /*================================================================================================================================================================================== */
-
-
 }
