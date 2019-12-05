@@ -22,7 +22,7 @@
   background: white;
   padding: 20px 40px;
   outline: none;
-  color: #ddd;
+  color: rgb(20, 9, 9);
   transition: 0.5s;
   border-radius: 20px;
   border-width: 2px;
@@ -30,7 +30,7 @@
 		border-color: black;
 }
 .contact-form-text:focus{
-  box-shadow: 0 0 10px 4px #031527;
+  box-shadow: 0 0 10px 4px black;
 }
 textarea.contact-form-text{
   resize: none;
@@ -566,9 +566,6 @@ textarea.contact-form-text{
   
   .content p {
     text-align: justify;
-    border-width: thin;
-		border-style: solid;
-		border-color: orange;
   }
   
   
@@ -589,7 +586,7 @@ textarea.contact-form-text{
     background-repeat: no-repeat;
     background-size:cover;
     flex: 1;
-    margin: 50px;
+    margin: 60px;
     text-transform: uppercase;
   
     border-radius: 10px;
@@ -597,6 +594,7 @@ textarea.contact-form-text{
 		border-style: solid;
 		border-color: black;
   }
+
   
   .pricing-header {
   
@@ -634,14 +632,7 @@ textarea.contact-form-text{
     padding: 8px 0;
     font-size: 14px;
   }
-  
-  
-  .border {
-    width: 80px;
-    height: 1px;
-    background:black;
-    margin: auto;
-  }
+
   
   .pricing-table a {
     display: block;
@@ -733,7 +724,7 @@ textarea.contact-form-text{
     /*=============================================== Background de la page=================================================================================================================================== */
   
     body {
-      background: linear-gradient(rgb(255, 255, 255)rgb(255, 255, 255)5));
+      background: linear-gradient(rgb(255, 255, 255)rgb(255, 255, 255)5);
     }
   
     /*=============================================== Flèche qui va vers le bas=================================================================================================================================== */
@@ -812,15 +803,5 @@ textarea.contact-form-text{
   
     #chk:checked~.menu {
       right: 0;
-    }
-    .richText {
-      margin-top: 40px;
-      -webkit-box-shadow: 0 0 20px 0 #999;
-      -moz-box-shadow: 0 0 20px 0 #999;
-      box-shadow: 0 0 20px 0 #999;
+    }    /*================================================================================================================================================================================== */
   }
-  
-    /*================================================================================================================================================================================== */
-  
-  
-  

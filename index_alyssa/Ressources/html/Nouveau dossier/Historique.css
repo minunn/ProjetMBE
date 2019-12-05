@@ -388,7 +388,7 @@
 
 body {
 
-    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+    background: whitesmoke;
 
 }
 
@@ -1002,46 +1002,31 @@ p {
 
 }
 
-
-
-
-
-
-
 .pricing-table {
 
-    background: #f1f1f1;
-
+    background-image: url(historique.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
     flex: 1;
 
-    margin: 50px;
-
-    text-transform: uppercase;
-
-
-
+    margin: 110px;
     border-radius: 10px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
 
 }
-
-
 
 .pricing-header {
-
-
-
     z-index: 0;
-
+    color: black;
     border-radius: 10px;
-
-    color: #fff;
-
-    margin-bottom: 20px;
+    border-width: 2,5px;
+	border-style: solid;
+	border-color: black;
 
 
 }
-
-
 
 .Rebr {
 
@@ -1055,11 +1040,7 @@ p {
 
     padding: 40px 0;
 
-
-    border-radius: 10px;
-
 }
-
 
 
 .Rebr span {
@@ -1068,7 +1049,6 @@ p {
     list-style-type: none; 
 
 }
-
 
 
 .title {
@@ -1099,174 +1079,18 @@ p {
 
     list-style: none;
 
-    margin-left: 0;
+    margin-left: 10px;
 
-    padding-left: 0;
+    padding-left: 10;
 
     padding: 10px 20px;
 
 }
-
-
-
-.pricing-list li {
-
-    margin: 8px 0;
-
-    font-size: 14px;
-
-    color: #344;
-
-    text-align: center;
-
-}
-
-
-
-.border {
-
-    width: 80px;
-
-    height: 1px;
-
-    background: #ddd;
-
-    margin: auto;
-
-}
-
-
-
-.pricing-table a {
-
-    display: block;
-
-    width: 100%;
-
-    height: 100%;
-
-    font-size: 14px;
-
-    transition: .2s linear;
-
-}
-
-
-
-.pricing-table a:hover {
-
-    border-radius: 30px;
-
-}
-
-
-
-.table1 .pricing-header {
-
-    background: #02a5ce;
-
-}
-
-
-
-.table2 .pricing-header {
-
-    background: #02a5ce;
-
-}
-
-
-
 .table3 .pricing-header {
 
-    background: #02a5ce;
+    background: white;
 
 }
-
-
-
-
-
-
-
-.table1 a {
-
-
-
-    border-radius: 10px;
-
-    color: #000000;
-
-}
-
-
-
-.table2 a {
-
-    border-radius: 10px;
-
-    color: #000000;
-
-}
-
-
-
-.table3 a {
-
-    border-radius: 10px;
-
-    color: #000000;
-
-}
-
-
-
-.table1 a:hover {
-
-    resize: 500px;
-
-    overflow: auto;
-
-
-
-    border-radius: 10px;
-
-    background: #0abdd4;
-
-    color: #fff;
-
-}
-
-
-
-.table2 a:hover {
-
-
-
-    border-radius: 10px;
-
-    background: #0abdd4;
-
-    color: #fff;
-
-}
-
-
-
-.table3 a:hover {
-
-
-
-    border-radius: 10px;
-
-    background: #0abdd4;
-
-    color: #fff;
-
-}
-
-
-
 /*=============================================== PARTIE MOBILE=================================================================================================================================== */
 
 /*=============================================== PARTIE MOBILE=================================================================================================================================== */
@@ -1294,235 +1118,6 @@ p {
         padding-top: 40px;
 
     }
-
-
-
-    /*=============================================== PARTIE DES 3 TABLEAUX=================================================================================================================================== */
-
-
-
-
-
-    .content {
-
-        padding: 0 20px;
-
-    }
-
-
-
-
-
-    .content p {
-
-        text-align: justify;
-
-    }
-
-
-
-
-
-    .container {
-
-        max-width: 2000px;
-
-        margin: auto;
-
-        padding: 00px;
-
-        display: flex;
-
-        flex-wrap: wrap;
-
-
-    }
-
-
-
-    .pricing-table {
-
-        background: #f1f1f1;
-
-        flex: 1;
-
-        margin: 20px;
-
-        text-transform: uppercase;
-
-
-
-        border-radius: 10px;
-
-    }
-
-
-
-    .pricing-header {
-
-
-
-        border-radius: 10px;
-
-        color: #fff;
-
-        position: relative;
-
-        margin-bottom: 20px;
-
-
-
-    }
-
-
-
-    .Rebr {
-
-        font-size: 40px;
-
-        display: flex;
-
-        align-items: center;
-
-        justify-content: center;
-
-        padding: 40px 0;
-
-
-
-        border-radius: 10px;
-
-    }
-
-
-
-    .Rebr span {
-
-        font-size: 30px;
-        list-style: none;
-
-    }
-
-
-
-    .title {
-
-        position: absolute;
-
-        bottom: 0;
-
-        left: 50%;
-
-        transform: translate(-50%, 50%);
-
-        width: 80%;
-
-        max-width: 360px;
-
-        text-align: center;
-
-        padding: 8px 0;
-
-        font-size: 14px;
-        list-style: none;
-
-
-    }
-
-
-
-    .pricing-list {
-
-
-
-        list-style: none;
-
-        margin-left: 0;
-
-        padding-left: 0;
-
-        padding: 10px 20px;
-
-    }
-
-
-
-    .pricing-list li {
-
-        margin: 8px 0;
-
-        font-size: 14px;
-
-        color: white;
-
-        text-align: center;
-        list-style: none;
-
-
-    }
-
-
-
-
-    .pricing-table a {
-
-        display: block;
-
-        width: 100%;
-
-        height: 100%;
-
-        font-size: 14px;
-
-        transition: .2s linear;
-
-    }
-
-
-
-    .pricing-table a:hover {
-        list-style: none;
-    }
-
-
-
-    .table3 .pricing-header {
-
-        background: #02a5ce;
-
-    }
-
-
-
-
-    .table3 a {
-
-        color: #2980b9;
-
-    }
-
-    .table3 a:hover {
-
-        background: #0abdd4;
-
-        color: #fff;
-
-    }
-
-
-
-    .pricing-table {
-
-        flex: 100%;
-
-    }
-
-    .texte {
-        list-style: none;
-
-    }
-
-
 
     /*================================================================================================================================================================================== */
 
@@ -1628,7 +1223,7 @@ p {
 
     body {
 
-        background: linear-gradient(rgb(255, 255, 255)rgb(255, 255, 255)5));
+        background: whitesmoke;
 
     }
 
@@ -1791,13 +1386,5 @@ p {
     .ul {
         list-style: none;
     }
-
-
-
     /*================================================================================================================================================================================== */
-
-
-
-
-
 }
