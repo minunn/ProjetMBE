@@ -13,7 +13,7 @@ a {
     padding: 1px 15px;
     width: 17px;
     color: rgb(0, 0, 0);
-    background: #e4e4e4;
+    background: #ffffff;
     height: 45px;
     font: 18px/46px 'Avenir','Open Sans', 'Trebuchet MS', Verdana, Arial, Helvetica, sans-serif;
     text-shadow: 0 1px 0 rgba(0, 0, 0, 0.35);
@@ -22,8 +22,7 @@ a {
     cursor: pointer;
     position: absolute;
     right: 1%;
-    top: 5px;
-    bottom: 0;
+    top: 20px;
     border-radius: 4px 4px 4px 4px;
     transition: background 0.2s linear 0s;
     -webkit-tap-highlight-color: rgba(214, 214, 214, 0);
@@ -53,7 +52,7 @@ a {
     height: 0;
     overflow: visible;
     position: relative;
-    z-index: 1000;
+    z-index: 1;
 }
 
 #nav ul {
@@ -69,7 +68,7 @@ a {
     border-radius: 0 0 4px 4px;
     
     position: absolute;
-    top: 50px;
+    top: 100px;
     border: 0;
     position: relative;
 }
@@ -87,7 +86,7 @@ a {
     height: auto;
     overflow: hidden;
     border: 0;
-    border-top: 1px groove;
+    border-top: 1px outset;
 }
 
 #nav li:first-child {
@@ -103,7 +102,7 @@ a {
 #nav span.submenu {
     float: none;
     display: block;
-    margin: 0;
+    margin: 0;  
     padding: 9px 20px;
     height: auto;
     color: rgb(0, 0, 0);
@@ -133,7 +132,6 @@ a {
 }
 
 #nav span.submenu.is-active {
-    border-bottom: 1px dotted #ffffff;
 
 }
 
@@ -173,7 +171,6 @@ a {
     text-align: center;
     font-size: inherit;
     vertical-align: top;
-
 }
 
 @media (min-width: 36em) {
@@ -206,9 +203,8 @@ a {
 
     #nav {
         height: 100px;
-        background: #f3f3f3;
+        background: #ffffff;
         position: relative;
-        z-index: 99;
         border: 0;
         border-radius: 1px;
     }
@@ -222,7 +218,6 @@ a {
         opacity: 1;
         margin: 4px 0;
         position: relative;
-        z-index: 10;
         top: 0;
         overflow: visible;
     }
@@ -247,7 +242,6 @@ a {
     }
 
     #nav li.last {
-        border-right: 0;
     }
 
     #nav li.right {
@@ -258,7 +252,6 @@ a {
 
     #nav li.onmobile {
         display: none;
-        position: absolute;
     }
 
     #nav a,
@@ -299,7 +292,6 @@ a {
     }
 
     #nav li:hover {
-        z-index: 11;
     }
 
     #nav ul.submenu {
@@ -311,9 +303,8 @@ a {
         height: 150px;
         position: absolute;
         opacity: 0;
-        background: #fffbfb;
-        top: 95%;
-        z-index: 10;
+        background: #ffffff;
+        top: 100%;
         border-radius: 0 3px 3px 3px;
         box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
         transition: max-height 0.2s linear 0s, padding 0.2s linear 0s, opacity 0.2s linear 0s;
@@ -349,7 +340,7 @@ a {
         line-height: 1.5em;
         border-radius: 0;
         border: 0;
-        border-top: 1px dotted #aaaaaa;
+        border-top: 1px dotted #ffffff;
 
     }
 
@@ -357,7 +348,4 @@ a {
         border: 0;
     }
 
-    #nav ul.submenu li a:hover,
-    #nav ul.submenu li a.is-active {
-    }
 }

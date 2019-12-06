@@ -3,7 +3,8 @@
 /*================================================================================================================================================================================== */
 /* Partie footer  */
 .footer-distributed {
-  background-color: #2c292f;
+  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/background.jpg);
+
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -47,7 +48,7 @@
 }
 
 .footer-distributed .footer-company-name {
-  color: #8f9296;
+  color: #ffffff;
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -61,15 +62,15 @@
 
 
 .footer-distributed .footer-center i {
-  background-color: #33383b;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #000000;
   font-size: 25px;
   width: 38px;
   height: 38px;
   border-radius: 50%;
   text-align: center;
   line-height: 42px;
-  margin: 10px 15px;
+  margin: 25px 30px;
   vertical-align: middle;
 }
 
@@ -93,7 +94,7 @@
 }
 
 .footer-distributed .footer-center p a {
-  color: ##97c5eb;
+  color: #ffffff;
   text-decoration: none;
   ;
 }
@@ -169,7 +170,7 @@
 /*BACKGROUND DE LA PAGE================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
 body {
-  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/motifs.jpg);
+  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%),   url(img/motifs.jpg);
 width: 100%;
 }
 
@@ -373,9 +374,11 @@ p {
 }
 
 .logo {
+  z-index: 1000;
+  top: -0.2%;
+  position: absolute;
   line-height: 75px;
   float: right;
-  text-transform: uppercase;
 }
 
 .menu {
@@ -462,10 +465,10 @@ a {
   background-repeat: no-repeat;
     background-size:cover;
     flex: 1;
-    margin: 60px;
+    margin: 50px;
     text-transform: uppercase;
   
-    border-radius: 10px;
+    border-radius: 14px;
     border-width: 2,5px;
 		border-style: solid;
 		border-color: black;
@@ -476,6 +479,7 @@ a {
   z-index: 0;
   border-radius: 10px;
   color: black;
+  
   margin-bottom: 20px;
   border-width: 2,5px;
   border-style: solid;
@@ -489,7 +493,6 @@ a {
   align-items: center;
   justify-content: center;
   padding: 40px 0;
-
   border-radius: 10px;
 }
 
@@ -532,7 +535,7 @@ a {
 
 .border {
   width: 80px;
-  height: 1px;
+  height: 0px;
   background: #ddd;
   margin: auto;
 }
@@ -688,7 +691,7 @@ a {
     margin: 60px;
     text-transform: uppercase;
   
-    border-radius: 10px;
+    border-radius: 15px;
     border-width: 2,5px;
 		border-style: solid;
 		border-color: black;
@@ -757,7 +760,7 @@ a {
 
   .border {
     width: 100px;
-    height: 1px;
+    height: 0px;
     background: #ddd;
     margin: auto;
   }
