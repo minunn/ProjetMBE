@@ -1,128 +1,129 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
 
 <head>
   <meta charset="utf-8">
-  <title></title>
+  <title>MBE Elec</title>
+  <!-- css page accueil -->
+  <link rel="stylesheet" href="menu.css" />
+
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="all.css">
+  <!-- css icon fontawesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <!-- css fonts google -->
   <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
-  <script type="text/javascript" src="javascript/test.js"></script>
-</head>
+  <script src="https://kit.fontawesome.com/701037d095.js" crossorigin="anonymous"></script>
 
+
+</head>
 
 <body>
   <!-- Menu en haut de page -->
-  <div class="header">
+  <!-- <div class="header">
     <input type="checkbox" id="chk">
     <label for="chk" class="show-menu-btn">
       <i class="fas fa-ellipsis-h"></i>
-    </label>
-
+    </label>-->
+  <!--
     <ul class="menu">
-      <a href="#">accueil</a>
-      <a href="#">Services</a>
-      <a href="#">Qui sommes nous ?</a>
-      <a href="#">Tarifs</a>
-      <a href="#">Partenaires</a>
-      <a href="#">Mention legales</a>
+      <a href="https://fr-fr.facebook.com/intechinfo/">accueil</a>
+      <a href="https://fr-fr.facebook.com/intechinfo/">Services</a>
+      <a href="https://fr-fr.facebook.com/intechinfo/">Qui sommes nous ?</a>
+      <a href="https://fr-fr.facebook.com/intechinfo/">Tarifs</a>
+      <a href="https://fr-fr.facebook.com/intechinfo/">Partenaires</a>
+      <a href="https://fr-fr.facebook.com/intechinfo/">Mention legales</a>
       <label for="chk" class="hide-menu-btn">
         <i class="fas fa-times"></i>
       </label>
     </ul>
+  </div> -->
+
+  <nav id="nav">
+    <ul>
+      <li><a href="#">Mentions legales</a></li>
+      <li><a href="#">Partenaires</a></li>
+      <li><a href="#">Qui Sommes nous ?</a></li>
+      <li><a href="#">Tarifs</a></li>
+      <li><span class="submenu">Services</span>
+        <ul class="submenu">
+          <li><a href="#2">Intervention rapide</a></li>
+          <li><a href="#3">Installation</a></li>
+          <li><a href="#4">Maintenance</a></li>
+        </ul>
+      </li>
+      <li class="last"><a href="#">Accueil</a></li>
+    </ul>
+  </nav><!-- end of #nav -->
+  <div class="logo">
+    <img src="img/MBE.png" height="100px" width="200px" />
   </div>
-  <!-- Slidder de la page -->
-    <!-- Slidder de la page -->
-  <!--<div id="slidy-container">
-    <figure id="slidy">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/eyes.jpg" alt="eyes">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lou.jpg" alt="lou">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie-2.jpg" alt="lucie-2">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie">
-      <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/lucie.jpg" alt="lucie">
-    </figure>
-  </div>-->
- 
-  <!--
-  <div id="slider">
-    <figure>
-      <img src="image1.jpg">
-      <img src="image2.jpg">
-      <img src="image3.jpg">
-      <img src="image2.jpg">
-      <img src="image1.jpg">
-    </figure>
-  </div>-->
-
-
+  <!--Slider du haut de page -->
   <div class="section-top">
+
     <div class="content">
-        <section id="section03" class="demo">
-            <a href="#section04"><span></span></a>
-          </section>
+      <section id="section03" class="demo">
+
+        <!-- Flèche qui permet d'aller vers le bas -->
+        <a href="#down"><span></span></a>
+      </section>
     </div>
-</div>
-
-  <!-- Flèche qui permet d'aller vers le bas -->
-
+  </div>
+  <!-- aller vers le bas -->
   <div id="down">
   </div>
   <!-- Nos 3 Rubriques -->
   <div class="container">
     <div class="pricing-table table1">
-
+      <!-- permet d'aller sur la page intervention rapides -->
       <a class="notrebutton" href="#">
         <div class="pricing-header">
-
           <div class="Rebr"><br><br><span>
-              <center>Intervention Rapides</center>
+              <center>Intervention Rapide</center>
             </span></div>
           <div class="title"></div>
         </div>
         <ul class="pricing-list">
-          <center><img src="img/elec.jpg" height="50px" width="50px" /></center>
+          <center><img src="img/eclair.png" height="50px" width="50px" /></center>
           <li>Electricité</li>
           <div class="border"></div>
           <center><img src="img/Clim.png" height="50px" width="50px" /></center>
           <li>Climatisation</li>
           <div class="border"></div>
-          <center><img src="img/key.png" height="50px" width="50px" /></center>
+          <center><img src="img/clef.png" height="50px" width="50px" /></center>
           <li>Serrurerie</li>
         </ul><br>
     </div>
     </a>
 
     <div class="pricing-table table2">
-
-      <a class="notrebutton" href="#">
+      <!-- permet d'aller sur la page Installations -->
+      <a href="#">
         <div class="pricing-header">
           <div class="Rebr"><br><br><span>
-              <center>Installations</center>
+              <center>Installation</center>
             </span></div>
           <div class="title"></div>
         </div>
         <ul class="pricing-list">
-          <center><img src="img/elec.jpg" height="50px" width="50px" /></center>
+          <center><img src="img/eclair.png" height="50px" width="50px" /></center>
           <li>Electricité</li>
           <div class="border"></div>
           <center><img src="img/Clim.png" height="50px" width="50px" /></center>
           <li>Climatisation</li>
           <div class="border"></div>
-          <center><img src="img/key.png" height="50px" width="50px" /></center>
+          <center><img src="img/clef.png" height="50px" width="50px" /></center>
           <li>Serrurerie</li>
         </ul>
         <br>
     </div>
     </a>
     <div class="pricing-table table3">
-
+      <!-- permet d'aller sur la page Contrat de maintenance -->
       <a class="notrebutton" href="#">
         <div class="pricing-header">
           <div class="Rebr"><br><br><span>
-              <center>Contrat de maintenance</center>
+              <center>maintenance</center>
             </span></div>
           <div class="title"></div>
         </div>
@@ -141,23 +142,25 @@
   </div>
   </a>
 
+  <!-- footer de la page -->
   <footer class="footer-distributed">
     <div class="Quali-img">
-
+      <!--Partie logo Quali-->
       <div class="Quali-img table_1">
-        <img src="logo_qualienr.jpg" height="125px" width="200px" />
+        <img src="img/logo_qualienr.jpg" height="125px" width="200px" />
       </div>
       <div class="Quali-img table_2">
-        <img src="logo-qualipac-RGE.png" height="130px" width="200px" />
+        <img src="img/logo-qualipac-RGE.png" height="130px" width="200px" />
       </div>
       <div class="Quali-img table_3">
-        <img src="logo-QualiPV-2019.png" height="125px" width="200px" />
+        <img src="img/logo-QualiPV-2019.png" height="125px" width="200px" />
       </div>
     </div>
     <br>
+    <!-- partie contact -->
     <div class="footer-left">
       <h3><span>CONTACT</span></h3>
-      <p class="footer-company-name">© 2019 intech</p> 
+      <p class="footer-company-name">© 2019 intech</p>
     </div>
 
     <div class="footer-center">
@@ -177,37 +180,18 @@
     </div>
     <div class="footer-right">
       <p class="footer-company-about">
+        <!-- les reseaux de l'entreprise -->
         <span>Nos reseaux:</span>
         <div class="footer-icons">
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-pinterest"></i></a>
+          <a href="https://fr-fr.facebook.com/intechinfo/"><i class="fa fa-facebook"></i></a>
+          <a href="https://fr-fr.facebook.com/intechinfo/"><i class="fa fa-instagram"></i></a>
+          <a href="https://fr-fr.facebook.com/intechinfo/"><i class="fa fa-linkedin"></i></a>
+          <a href="https://fr-fr.facebook.com/intechinfo/"><i class="fab fa-pinterest"></i></a>
         </div>
     </div>
   </footer>
-
 </body>
-<!-- Permet de faire des boutons sur le slidder aller à droite ou à gauche -->
-<script type="text/javascript">
-  var slides = document.getElementsByClassName("slide");
-  var index = 0;
 
-  function goLeft() {
-    if (index == 0) index = slides.length - 1;
-    else index--;
-
-    slides[0].style.marginLeft = "-" + index * 600 + "px";
-  }
-
-  function goRight() {
-    if (index == slides.length - 1) index = 0;
-    else index++;
-
-    slides[0].style.marginLeft = "-" + index * 600 + "px";
-  }
-
-  setInterval(goRight, 5000)
-</Script>
+<script type="text/javascript" src="menu.js"></script>
 
 </html>
