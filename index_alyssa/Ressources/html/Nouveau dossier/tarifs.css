@@ -566,9 +566,6 @@
     
     .content p {
       text-align: justify;
-      border-width: thin;
-          border-style: solid;
-          border-color: orange;
     }
     
     
@@ -583,12 +580,10 @@
     }
     
     .pricing-table {
-      background-repeat: no-repeat;
-      background-size:cover;
       flex: 1;
       margin: 60px;
       text-transform: uppercase;
-    
+    height: 700px;
       border-radius: 10px;
       border-width: 2,5px;
           border-style: solid;
@@ -649,24 +644,27 @@
       background: white;
     }
     table{
-      width: 100%;
+      width: 90%;
+      height:60%;
       border-collapse: collapse;
+      margin:auto;
     }
     th,td{
       padding: 10px;
-      text-align:left;
+      text-align:center;
       border:solid 2px black;
     }
     th{
-      background-color: rgb(89, 144, 170);
+      background-color: #ccc;
       color: white;
     }
     tr:nth-child(odd){
-      background-color: #ccc;
+      background-color: white;
     }
     *, *::before, *::after{
       box-sizing: border-box;
     }
+
     @media only screen and (max-width:900px){
       table, thead, tbody, tr,th,td{
         display: block;
@@ -681,7 +679,7 @@
         background: white;
       }
       td:nth-child(odd){
-        background-color:#ccc;
+        background-color: white;
       }
       td::before{
         padding:10px;
@@ -691,7 +689,7 @@
         left:0;
         width:130px;
         bottom:0;
-        background-color: rgb(89, 144, 170);
+        background-color: #ccc;
         color: white;
         display: flex;
         align-items: center;
