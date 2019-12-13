@@ -2,13 +2,14 @@
 /*PARTIE FOOTER ==================================================*/
 /*================================================================================================================================================================================== */
 /* Partie footer  */
+
+/* Partie footer  avec fond bleu du footer */
 .footer-distributed {
   background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/background.jpg);
-
   box-sizing: border-box;
   width: 100%;
   text-align: left;
-  font: bold 16px sans-serif;
+  font-family: 'Montserrat', sans-serif;
   padding: 50px 50px 60px 50px;
   margin-top: 80px;
 }
@@ -26,9 +27,10 @@
   width: 30%;
 }
 
+/* titre du footer avec ces fonts a changer */
 .footer-distributed h3 {
   color: #ffffff;
-  font: normal 36px 'Cookie', cursive;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
@@ -51,10 +53,11 @@
   color: #ffffff;
   font-size: 14px;
   font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
-/* Footer Centre */
+/* Centre du footer */
 
 .footer-distributed .footer-center {
   width: 35%;
@@ -65,6 +68,7 @@
   background-color: #ffffff;
   color: #000000;
   font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
   width: 38px;
   height: 38px;
   border-radius: 50%;
@@ -76,6 +80,7 @@
 
 .footer-distributed .footer-center i.fa-envelope {
   font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
   line-height: 38px;
 }
 
@@ -89,6 +94,7 @@
 .footer-distributed .footer-center p span {
   display: block;
   font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   line-height: 2;
 }
@@ -111,6 +117,7 @@
   color: #92999f;
   font-size: 13px;
   font-weight: normal;
+  font-family: 'Montserrat', sans-serif;
   margin: 0;
 }
 
@@ -118,6 +125,7 @@
   display: block;
   color: #ffffff;
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -133,7 +141,7 @@
   cursor: pointer;
   background-color: #33383b;
   border-radius: 2px;
-
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   color: #ffffff;
   text-align: center;
@@ -143,7 +151,7 @@
   margin-bottom: 5px;
 }
 
-/* Partie image Quali du footer */
+/* Partie image Quali pac enr pv du footer */
 
 .Quali-img {
 
@@ -159,6 +167,7 @@
   width: 100%;
   height: 100%;
   font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
   transition: .2s linear;
 }
 
@@ -169,38 +178,38 @@
 /*================================================================================================================================================================================== */
 /*BACKGROUND DE LA PAGE================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
+
 body {
-  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%),   url(img/motifs.jpg);
+  font-family: 'Montserrat', sans-serif;
+  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%),   url(img/motifs_MBE_small.jpg);
 width: 100%;
 }
 
-/*================================================================================================================================================================================== */
-/*Flèche qui va vers le bas================================================================================================================================================================================== */
-/*================================================================================================================================================================================== */
+/* permet de rendre le scroll de la page plus clean*/
 html {
-
   scroll-behavior: smooth;
 }
 
 /*================================================================================================================================================================================== */
 /*Slidder de la page================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
+
 body,
 html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 100%;
-  height: 100%;
-  
+  height: 100%;  
 }
 
+/* image fond du slider + slider en lui meme*/
 .section-top {
   width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_1.jpg);
+  background-image: url(img/slider/slider_elecBat1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   animation: slide 50s infinite;
@@ -220,6 +229,7 @@ html {
 .content h1 {
   color: white;
   font-size: 60px;
+  font-family: 'Montserrat', sans-serif;
   letter-spacing: 16px;
 }
 
@@ -228,46 +238,42 @@ html {
   color: white;
   text-decoration: none;
   font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
   border-radius: 20px;
   
 }
 
 p {
   font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
   padding: 10px;
   line-height: 24px;
 }
 
+/* animation du slider avec % */
 @keyframes slide {
   0% {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_1.jpg);
+    background-image: url(img/slider/slider_elecBat1.jpg);
   }
 
   15% {
-    background-image:linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),   url(img/image_2.jpg);
+    background-image:url(img/slider/slider_installation2.jpg);
   }
 
   25% {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_3.jpg);
+    background-image: url(img/slider/slider_clim3.jpg);
   }
 
   35% {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_4.jpg);
+    background-image: url(img/slider/slider_cuisine4.jpg);
   }
 
   45% {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_5.jpg);
-  }
-
-  55% {
-    background-image:linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),   url(img/image_6.jpg);
-  }
-
-  65% {
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%),  url(img/image_7.jpg);
+    background-image: url(img/slider/slider_lum5.jpg);
   }
 }
 
+/* flèche qui permet d'aller vers le bas de la page */
 #section03 a {
   padding-top: 60px;
 }
@@ -316,6 +322,8 @@ p {
   box-sizing: border-box;
 }
 
+
+/* Partie animation de la flèche qui va vers le bas */
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0;
@@ -360,12 +368,13 @@ p {
 /*MENU HAUT DE PAGE================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
 
+/* font de haut de page mennu */
 * {
   margin: 0;
   padding: 0;
   font-family: "montserrat", sans-serif;
 }
-
+/* fond du menu */
 .header {
   height: 75px;
   background: #ffffff;
@@ -373,6 +382,7 @@ p {
   color: rgb(0, 0, 0);
 }
 
+/* logo mbe*/
 .logo {
   z-index: 1000;
   top: -0.2%;
@@ -380,11 +390,12 @@ p {
   line-height: 75px;
   float: right;
 }
-
+/* position menu */
 .menu {
   float: right;
   line-height: 75px;
 }
+
 
 .menu a {
 
@@ -394,11 +405,12 @@ p {
   padding: 0 30px;
   transition: 0.4s;
 }
-
+/*button menu mobile*/
 .show-menu-btn,
 .hide-menu-btn {
   transition: 0.4s;
   font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   display: none;
 }
@@ -449,9 +461,7 @@ a {
   border-color: orange;
 }
 
-
 .container {
-
   max-width: 1500px;
   margin: auto;
   padding: 40px;
@@ -459,8 +469,8 @@ a {
   flex-wrap: wrap;
 }
 
-
-
+/* Partie bas des rebrique */
+/* et bord autour des rebriques*/
 .pricing-table {
   background-repeat: no-repeat;
     background-size:cover;
@@ -474,21 +484,24 @@ a {
 		border-color: black;
 }
 
+/* Partie haut des rebrique */
+/* et bord haut des rebriques*/
 .pricing-header {
-
   z-index: 0;
   border-radius: 10px;
   color: black;
-  
   margin-bottom: 20px;
-  border-width: 2,5px;
+  border-width: 2.5px;
   border-style: solid;
   border-color: black;
 
 }
 
+/* titre des rebrique*/
 .Rebr {
   font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -497,9 +510,11 @@ a {
 }
 
 .Rebr span {
-  font-size: 17px;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
 }
 
+/* nom des parties dans les rebriques (bas) des rebrique*/
 .title {
   bottom: 0;
   left: 50%;
@@ -509,17 +524,20 @@ a {
   text-align: center;
   padding: 8px 0;
   font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  
 }
-
   
 .border {
   width: 80px;
   height: 1px;
   background:black;
   margin: auto;
+  
 }
 
 .pricing-list {
+  
   list-style: none;
   margin-left: 0;
   padding-left: 0;
@@ -529,14 +547,16 @@ a {
 .pricing-list li {
   margin: 8px 0;
   font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
   color: #344;
   text-align: center;
+  font-weight: bold;
 }
 
 .border {
+  
   width: 80px;
   height: 0px;
-  background: #ddd;
   margin: auto;
 }
 
@@ -545,6 +565,7 @@ a {
   width: 100%;
   height: 100%;
   font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
   transition: .2s linear;
 }
 
@@ -565,45 +586,61 @@ a {
   background: white;
 }
 
-
-
+/* fond des différentes rubriques*/
 .table1 a {
-
+  background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
+  
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-position-x: 0%;
   border-radius: 10px;
   color: #000000;
 }
 
 .table2 a {
+  background-image: url(img/rubriques/rubrique_installation.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: 150px;
+  background-position-x: -100px;
   border-radius: 10px;
-  color: #000000;
 }
 
 .table3 a {
+  background-image: url(img/rubriques/rubrique_maintenance.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-position-x: 0%;
   border-radius: 10px;
-  color: #000000;
 }
 
 .table1 a:hover {
   resize: 500px;
   overflow: auto;
-
   border-radius: 10px;
-  background: #ffffff;
-  color: #fff;
+  background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
+  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+  background-size:cover;
 }
 
 .table2 a:hover {
-
+  resize: 500px;
+  overflow: auto;
   border-radius: 10px;
-  background: #ffffff;
-  color: #fff;
+  background-image: url(img/rubriques/rubrique_installation.jpg);
+  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+  background-size:cover;
 }
 
 .table3 a:hover {
-
+  resize: 500px;
+  overflow: auto;
   border-radius: 10px;
-  background: #ffffff;
-  color: #fff;
+  background-image: url(img/rubriques/rubrique_maintenance.jpg);
+  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+  background-size:cover;
 }
 
 /*================================================================================================================================================================================== */
@@ -617,10 +654,6 @@ a {
 /*================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
-
-
-
-
 
 /*================================================================================================================================================================================== */
 /*mobile screen 1100px en dessous = partie mobile================================================================================================================================================================================== */
@@ -639,7 +672,6 @@ a {
   header {
     padding-top: 40px;
   }
-
 
   .footer-distributed .footer-left,
   .footer-distributed .footer-center,
@@ -684,6 +716,8 @@ a {
     flex-wrap: wrap;
   }
 
+/* Partie bas des rebrique */
+/* et bord autour des rebriques*/
   .pricing-table {
     background-repeat: no-repeat;
     background-size:cover;
@@ -697,8 +731,9 @@ a {
 		border-color: black;
   }
 
+/* Partie haut des rebrique */
+/* et bord haut des rebriques*/
   .pricing-header {
-
     z-index: 0;
     border-radius: 10px;
     color: black;
@@ -709,8 +744,10 @@ a {
 
   }
 
+  /* titre des rebrique*/
   .Rebr {
     font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -721,8 +758,10 @@ a {
 
   .Rebr span {
     font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
   }
 
+  /* nom des parties dans les rebriques (bas) des rebrique*/
   .title {
     position: absolute;
     bottom: 0;
@@ -733,6 +772,7 @@ a {
     text-align: center;
     padding: 8px 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
   }
 
   .border {
@@ -754,6 +794,7 @@ a {
   .pricing-list li {
     margin: 8px 0;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     color: #344;
     text-align: center;
   }
@@ -770,6 +811,7 @@ a {
     width: 100%;
     height: 100%;
     font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
     transition: .2s linear;
   }
 
@@ -790,124 +832,84 @@ a {
     background: white;
   }
 
-
+/* fond des différentes rubriques*/
   .table1 a {
-    color: #ffffff;
+    background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    border-radius: 10px;
+    color: #000000;
   }
 
   .table2 a {
-    color: #ffffff;
+    background-image: url(img/rubriques/rubrique_installation.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: 150px;
+    background-position-x: 0px;
+    border-radius: 10px;
   }
 
   .table3 a {
-    color: #ffffff;
+    background-image: url(img/rubriques/rubrique_maintenance.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: 0%;
+    background-position-x: 0%;
+    border-radius: 10px;
   }
 
-  .table1 a:hover {
-    background: #ffffff;
-    color: #fff;
+  .table1 a:hover { 
+   resize: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+    background-size:cover;
   }
 
   .table2 a:hover {
-    background: #ffffff;
-    color: #fff;
+    resize: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    background-image: url(img/rubriques/rubrique_installation.jpg);
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+    background-size:cover;
   }
 
   .table3 a:hover {
-    background: #ffffff;
-    color: #fff;
+    resize: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    background-image: url(img/rubriques/rubrique_maintenance.jpg);
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+    background-size:cover;
   }
 
   .pricing-table {
     flex: 100%;
   }
-
+  
   /*================================================================================================================================================================================== */
   /*Background de la page================================================================================================================================================================================== */
   /*================================================================================================================================================================================== */
 
   body {
-   background-image: linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/motifs.jpg);
+   background-image: linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/motifs_MBE_small.jpg);
    }
 
 
    .logo {
      position: absolute;
    }
-  /*================================================================================================================================================================================== */
-  /*flèche qui va vers le bas================================================================================================================================================================================== */
-  /*================================================================================================================================================================================== */
 
+  /* permet de rendre le scroll de la page plus clean*/
   html {
     scroll-behavior: smooth;
-  }
-
-  a {
-    text-decoration: none;
-    color: black;
-  }
-
-  #godown {
-    padding: 0.35em 1.2em;
-    border-radius: 0.12em;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    text-align: center;
-    transition: all 0.2s;
-    display: block;
-    margin: 0.4em auto;
-    color: white;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -20%);
   }
 
   #down {
     margin-top: 0%;
     padding-bottom: 0%;
   }
-
-  /*================================================================================================================================================================================== */
-  /*Partie menu du haut================================================================================================================================================================================== */
-  /*================================================================================================================================================================================== */
-
-
-
-  .show-menu-btn,
-  .hide-menu-btn {
-    display: block;
-  }
-
-  .menu {
-
-    z-index: 50;
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #333;
-    right: -100%;
-    top: 0;
-    text-align: center;
-    padding: 80px 0;
-    line-height: normal;
-    transition: 0.7s;
-  }
-
-  .menu a {
-    display: block;
-    padding: 20px;
-  }
-
-  .hide-menu-btn {
-    position: absolute;
-    top: 40px;
-    left: 40px;
-  }
-
-  #chk:checked~.menu {
-    right: 0;
-  }
-}

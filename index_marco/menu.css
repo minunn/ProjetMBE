@@ -3,7 +3,6 @@ a {
     text-decoration: none;
 }
 
-
 /* ----------------------------------------------------------------------------
 	Navigation Menu
 ----------------------------------------------------------------------------- */
@@ -111,8 +110,8 @@ a {
     text-align: left;
     font-size: 16px;
     font-weight: normal;
-    font-family: 'Open Sans', 'Helvetica Neue', Tahoma, Arial, sans-serif;
-    border: 0;
+    font-family: 'Montserrat', sans-serif;
+     border: 0;
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     transition: background 0.17s linear 0s;
@@ -123,9 +122,9 @@ a {
     margin-left: 10px;
     width: 15px;
     height: inherit;
-    content: ">";
+    content: "V";
     color: inherit;
-    font-family: 'icons';
+    font-family: 'Montserrat', sans-serif;
     text-align: center;
     font-size: 105%;
     vertical-align: top;
@@ -173,10 +172,11 @@ a {
     vertical-align: top;
 }
 
+/* ----------------------------------------------------------------------------
+	version mobile 
+----------------------------------------------------------------------------- */
 @media (min-width: 36em) {
 
-    /* Small devices (landscape phones, 576px and up) */
-    /*@media (min-width: 48em) { /* Medium devices (tablets, 768px and up) */
     #menutoggle {
         padding: 0 15px 0 15px;
         display: block;
