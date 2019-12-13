@@ -649,9 +649,47 @@ textarea.contact-form-text{
 
   
   .table3 .pricing-header {
-    background: white;
+    background-color: white;
   }
+  
+  *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  border-radius: 10px;
+  
+}
 
+.toolbar {}
+.tool-list {
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+	padding: 0;
+	margin: 1rem;
+	overflow: hidden;
+  
+}
+.tool {}
+.tool--btn {
+	display: block;
+	border: none;
+	padding: .5rem;
+  font-size: 20px;
+  
+}
+
+#output {
+	height: 400px; 
+
+	margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
+}
   
   /*=============================================== PARTIE MOBILE=================================================================================================================================== */
   /*=============================================== PARTIE MOBILE=================================================================================================================================== */

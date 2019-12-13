@@ -10,7 +10,7 @@
 
   <title></title>
 
-  <link rel="stylesheet" href="formulaire.css">
+  <link rel="stylesheet" href="tarifs.css">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -92,115 +92,59 @@
   <div id="down">
 
   </div>
- <!--Formulaire-->
+ <!--Texte mention légales-->
     <div class="container">
         <div class="pricing-table table3">
                   <div class="pricing-header">
                     <div class="Rebr"><br><br><span>
-  <h1>Formulaire de contact</h1><br>
-
+  
+  <h1>Tarifs</h1>
 </div>
 </div>
-  <form class="contact-form" action="" method="post" >
-      <SELECT name="rubrique">
-          <OPTION VALUE="" class="contact-form-text">Installation</OPTION>
-          <OPTION VALUE=""class="contact-form-text">Contrat de maintenance</OPTION>
-          <OPTION VALUE=""class="contact-form-text">Intervention rapide</OPTION>
-      </SELECT>
-    <input type="text" class="contact-form-text" placeholder="Nom"required>
-    <input type="text" class="contact-form-text" placeholder="Prénom"required>
-    <input type="email" class="contact-form-text" placeholder="Email" required>
-    <input type="text" class="contact-form-text" placeholder="Téléphone"required>
-    <div class="toolbar">
-      <ul class="tool-list">
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command='justifyLeft'
-            class="tool--btn">
-            <i class=' fas fa-align-left'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command='justifyCenter' 
-            class="tool--btn">
-            <i class=' fas fa-align-center'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="bold" 
-            class="tool--btn">
-            <i class=' fas fa-bold'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="italic"
-            class="tool--btn">
-            <i class=' fas fa-italic'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="underline"
-            class="tool--btn">
-            <i class=' fas fa-underline'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="insertOrderedList"
-            class="tool--btn">
-            <i class=' fas fa-list-ol'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="insertUnorderedList"
-            class="tool--btn">
-            <i class=' fas fa-list-ul'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="createlink" 
-            class="tool--btn">
-            <i class=' fas fa-link'></i>
-          </button>
-        </li>
-      </ul>
+<br>
+<br>
+    <!-- responsive table -->
+   <table>
+      <thead>
+        <tr>
+          <th><img src="MBE.png" class="mbe"></th>
+          <th>Electricité</th>
+          <th>Climatisation</th>
+          <th>Interphone</th>
+          <th>Serrurerie</th>
+          <th>Portail</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Intervention rapide</strong></td>
+          <td data-label="Electricité">100€</td>
+          <td data-label="Climatisation">200€</td>
+          <td data-label="Interphone">150€</td>
+          <td data-label="Serrurerie">500€</td>
+          <td data-label="Portail">100€</td>
+        </tr>
+        <tr>
+            <td data-label=""><strong>Installation</strong></td>
+            <td data-label="Electricité">500€</td>
+            <td data-label="Climatisation">800€</td>
+            <td data-label="Interphone">300€</td>
+            <td data-label="Serrurerie">1 000€</td>
+            <td data-label="Portail">250€</td>
+          </tr>
+          <tr>
+              <td data-label=""><strong>Maintenance</strong></td>
+              <td data-label="Electricité">300€</td>
+              <td data-label="Climatisation">400€</td>
+              <td data-label="Interphone">100€</td>
+              <td data-label="Serrurerie">300€</td>
+              <td data-label="Portail">180€</td>
+            </tr>  
+          </tbody>
+   </table>
     </div>
-    
-    <div id="output" contenteditable="true"></div>
-    <input type="submit" class="contact-form-btn" value="Envoyer">
-  </form><br>
-</div>
-</div>
-</div>
-<script type="text/javascript">
-let output = document.getElementById('output');
-let buttons = document.getElementsByClassName('tool--btn');
-for (let btn of buttons) {
-	btn.addEventListener('click', () => {
-		let cmd = btn.dataset['command'];
-		if(cmd === 'createlink') {
-			let url = prompt("Enter the link here: ", "http:\/\/");
-			document.execCommand(cmd, false, url);
-		} else {
-			document.execCommand(cmd, false, null);
-		}
-	})
-}
-</script>
+    </div>
+ 
 
 
 
@@ -293,5 +237,80 @@ for (let btn of buttons) {
     </div>
 
   </footer>
+
+
+
 </body>
+
+<!-- Permet de faire des boutons sur le slidder aller à droite ou à gauche -->
+
+<script type="text/javascript">
+
+  var slides = document.getElementsByClassName("slide");
+
+  var index = 0;
+
+
+
+  function goLeft() {
+
+    if (index == 0) index = slides.length - 1;
+
+    else index--;
+
+
+
+    slides[0].style.marginLeft = "-" + index * 600 + "px";
+
+  }
+
+
+
+  function goRight() {
+
+    if (index == slides.length - 1) index = 0;
+
+    else index++;
+
+
+
+    slides[0].style.marginLeft = "-" + index * 600 + "px";
+
+  }
+
+
+
+  setInterval(goRight, 5000)
+  // Affichage d'un message contextuel pour la saisie du pseudo
+pseudoElt.addEventListener("focus", function () {
+    document.getElementById("aidePseudo").textContent = "Entrez votre pseudo";
+});
+// Suppression du message contextuel pour la saisie du pseudo
+pseudoElt.addEventListener("blur", function (e) {
+    document.getElementById("aidePseudo").textContent = "";
+});
+
+publicvoid CreateMyRichTextBox()
+{
+    RichTextBox richTextBox1 = new RichTextBox();
+    richTextBox1.Dock = DockStyle.Fill;
+
+
+    richTextBox1.LoadFile("C:\\MyDocument.rtf");
+    richTextBox1.Find("Text", RichTextBoxFinds.MatchCase);
+
+    richTextBox1.SelectionFont = new Font("Verdana", 12, FontStyle.Bold);
+    richTextBox1.SelectionColor = Color.Red;
+
+    richTextBox1.SaveFile("C:\\MyDocument.rtf", RichTextBoxStreamType.RichText);
+
+    this.Controls.Add(richTextBox1);
+}
+
+
+</Script>
+</body>
+
+
+
 </html>
