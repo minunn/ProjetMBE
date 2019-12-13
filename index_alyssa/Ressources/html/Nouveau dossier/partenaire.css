@@ -984,63 +984,128 @@ p {
 
 /*===============================================LES 3 RUBRIQUES=================================================================================================================================== */
 
-
-
-.container {
-
-
-
+  
+    
+  
+    
+.content p {
+    text-align: justify;
+    border-width: thin;
+        border-style: solid;
+  }
+  
+  
+  .container {
+  
     max-width: 1500px;
-
     margin: auto;
-
-    padding: 60px;
-
+    padding: 40px;
     display: flex;
-
     flex-wrap: wrap;
-
-}
-
-.pricing-table {
-
-    background: white;
-
-
-    margin: 110px;
+  
+  }
+  
+  .pricing-table {
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex: 1;
+    margin: 60px;
+    text-transform: none;
+  
     border-radius: 10px;
     border-width: 2,5px;
-		border-style: solid;
-		border-color: black;
-
-}
-
-.pricing-header {
+        border-style: solid;
+        border-color: black;
+  }
+  
+  .pricing-header {
+  
     z-index: 0;
-    color: black;
     border-radius: 10px;
+    color: black;
+    margin-bottom: 20px;
     border-width: 2,5px;
-}
-
-.Rebr {
-
-    font-size: 30px;
-
+        border-style: solid;
+        border-color: black;
+  
+  }
+  
+  .Rebr {
+    font-size: 40px;
     display: flex;
-
-}
-
-
-.table3 .pricing-header {
-
-    background: white;
-
-}
-.titre{
-    color: black;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  
     border-radius: 10px;
-    border-width: 2,5px; 
-}
+  }
+  
+  .Rebr span {
+    font-size: 17px;
+  }
+  
+  .title {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+    max-width: 360px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  .pricing-table a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    transition: .2s linear;
+  }
+  
+  .pricing-table a:hover {
+    border-radius: 30px;
+    border-color: black;
+  }
+
+  
+  .table3 .pricing-header {
+    background: white;
+  }
+
+
+  .pe{
+    float: left;
+    width: calc(100% / 3);
+    padding: 40px 0;
+    transition: 0.4s;
+  }
+  .pe:hover{
+    background: #ddd;
+  }
+  .pe img{
+    width: 160px;
+    height: 160px;
+  }
+  .p-name{
+    margin: 16px 0;
+    font-weight: bolder;
+    
+  }
+  .p-des{
+    font-style: italic;
+    font-weight: lighter;
+  }
+  .p-sm{
+    margin-top: 12px;
+  }
+
+
+  @media screen and (max-width:500px) {
+    .pe{
+      width: 100%;
+    }
+  }
+
 /*=============================================== PARTIE MOBILE=================================================================================================================================== */
 
 /*=============================================== PARTIE MOBILE=================================================================================================================================== */
