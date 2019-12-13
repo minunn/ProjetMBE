@@ -439,209 +439,123 @@ p {
 /*================================================================================================================================================================================== */
 
 
-a {
-  text-decoration: none;
-  color: black;
-}
-
-.content {
-  padding: 0 20px;
-}
-
-.content img {
-  width: 100%;
-  max-width: 700px;
-  margin: 20px 0;
-}
-
 .content p {
-  text-align: justify;
-  border-width: thin;
-  border-style: solid;
-  border-color: orange;
-}
-
-.container {
-  max-width: 1500px;
-  margin: auto;
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-/* Partie bas des rebrique */
-/* et bord autour des rebriques*/
-.pricing-table {
-  background-repeat: no-repeat;
+    text-align: justify;
+    border-width: thin;
+        border-style: solid;
+  }
+  
+  
+  .container {
+  
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  .pricing-table {
+    background-repeat: no-repeat;
     background-size:cover;
     flex: 1;
-    margin: 50px;
-    text-transform: uppercase;
+    margin: 60px;
+    text-transform: none;
   
-    border-radius: 14px;
+    border-radius: 10px;
     border-width: 2,5px;
-		border-style: solid;
-		border-color: black;
-}
-
-/* Partie haut des rebrique */
-/* et bord haut des rebriques*/
-.pricing-header {
-  z-index: 0;
-  border-radius: 10px;
-  color: black;
-  margin-bottom: 20px;
-  border-width: 2.5px;
-  border-style: solid;
-  border-color: black;
-
-}
-
-/* titre des rebrique*/
-.Rebr {
-  font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-  border-radius: 10px;
-}
-
-.Rebr span {
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* nom des parties dans les rebriques (bas) des rebrique*/
-.title {
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 80%;
-  max-width: 360px;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
+        border-style: solid;
+        border-color: black;
+  }
   
-}
+  .pricing-header {
   
-.border {
-  width: 80px;
-  height: 1px;
-  background:black;
-  margin: auto;
+    z-index: 0;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 20px;
+    border-width: 2,5px;
+        border-style: solid;
+        border-color: black;
   
-}
-
-.pricing-list {
+  }
   
-  list-style: none;
-  margin-left: 0;
-  padding-left: 0;
-  padding: 10px 20px;
-}
-
-.pricing-list li {
-  margin: 8px 0;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  color: #344;
-  text-align: center;
-  font-weight: bold;
-}
-
-.border {
+  .Rebr {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
   
-  width: 80px;
-  height: 0px;
-  margin: auto;
-}
-
-.pricing-table a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  transition: .2s linear;
-}
-
-.pricing-table a:hover {
-  border-radius: 30px;
-  border-color: black;
-}
-
-.table1 .pricing-header {
-  background: white;
-}
-
-.table2 .pricing-header {
-  background: white;
-}
-
-.table3 .pricing-header {
-  background: white;
-}
-
-/* fond des différentes rubriques*/
-.table1 a {
-  background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
+    border-radius: 10px;
+  }
   
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position-y: 0%;
-  background-position-x: 0%;
-  border-radius: 10px;
-  color: #000000;
-}
+  .Rebr span {
+    font-size: 17px;
+  }
+  
+  .title {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+    max-width: 360px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+  .pricing-table a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    transition: .2s linear;
+  }
+  
+  .pricing-table a:hover {
+    border-radius: 30px;
+    border-color: black;
+  }
 
-.table2 a {
-  background-image: url(img/rubriques/rubrique_installation.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position-y: 150px;
-  background-position-x: -100px;
-  border-radius: 10px;
-}
+  
+  .table3 .pricing-header {
+    background: white;
+  }
 
-.table3 a {
-  background-image: url(img/rubriques/rubrique_maintenance.jpg);
-  background-size:cover;
-  background-repeat: no-repeat;
-  background-position-y: 0%;
-  background-position-x: 0%;
-  border-radius: 10px;
-}
 
-.table1 a:hover {
-  resize: 500px;
-  overflow: auto;
-  border-radius: 10px;
-  background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
-  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-  background-size:cover;
-}
+  .pe{
+    float: left;
+    width: calc(100% / 3);
+    padding: 40px 0;
+    transition: 0.4s;
+  }
+  .pe:hover{
+    background: #ddd;
+  }
+  .pe img{
+    width: 160px;
+    height: 160px;
+  }
+  .p-name{
+    margin: 16px 0;
+    font-weight: bolder;
+    
+  }
+  .p-des{
+    font-style: italic;
+    font-weight: lighter;
+  }
+  .p-sm{
+    margin-top: 12px;
+  }
 
-.table2 a:hover {
-  resize: 500px;
-  overflow: auto;
-  border-radius: 10px;
-  background-image: url(img/rubriques/rubrique_installation.jpg);
-  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-  background-size:cover;
-}
 
-.table3 a:hover {
-  resize: 500px;
-  overflow: auto;
-  border-radius: 10px;
-  background-image: url(img/rubriques/rubrique_maintenance.jpg);
-  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-  background-size:cover;
-}
+  @media screen and (max-width:500px) {
+    .pe{
+      width: 100%;
+    }
+  }
 
 /*================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
@@ -690,206 +604,111 @@ a {
   /*LES 3 RUBRIQUES================================================================================================================================================================================== */
   /*================================================================================================================================================================================== */
 
-  .content {
-    padding: 0 20px;
-  }
-
-  .content img {
-    width: 100%;
-    max-width: 1000px;
-    margin: 10px 0;
-  }
-
-  .content p {
-    text-align: justify;
-    border-width: thin;
-		border-style: solid;
-		border-color: orange;
-  }
+.container {
 
 
-  .container {
+
     max-width: 1500px;
-    margin: auto;
-    padding: 40px;
-    display: flex;
-    flex-wrap: wrap;
-  }
 
-/* Partie bas des rebrique */
-/* et bord autour des rebriques*/
-  .pricing-table {
+    margin: auto;
+
+    padding: 40px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+.pricing-table {
+
+    background-image: url(historique.jpg);
     background-repeat: no-repeat;
     background-size:cover;
     flex: 1;
-    margin: 60px;
-    text-transform: uppercase;
-  
-    border-radius: 15px;
-    border-width: 2,5px;
-		border-style: solid;
-		border-color: black;
-  }
 
-/* Partie haut des rebrique */
-/* et bord haut des rebriques*/
-  .pricing-header {
+    margin: 110px;
+    border-radius: 10px;
+    border-width: 2,5px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.pricing-header {
     z-index: 0;
-    border-radius: 10px;
     color: black;
-    margin-bottom: 20px;
-    border-width: 2,5px;
-		border-style: solid;
-		border-color: black;
-
-  }
-
-  /* titre des rebrique*/
-  .Rebr {
-    font-size: 40px;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 40px 0;
-  
     border-radius: 10px;
-  }
+    border-width: 2,5px;
+  border-style: solid;
+  border-color: black;
 
-  .Rebr span {
+
+}
+
+.Rebr {
+
+    font-size: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 0;
+
+}
+
+
+.Rebr span {
+
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
-  }
+    list-style-type: none; 
 
-  /* nom des parties dans les rebriques (bas) des rebrique*/
-  .title {
-    position: absolute;
+}
+
+
+.title {
+
     bottom: 0;
+
     left: 50%;
+
     transform: translate(-50%, 50%);
+
     width: 80%;
+
     max-width: 360px;
+
     text-align: center;
+
     padding: 8px 0;
+
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-  }
 
-  .border {
-    width: 80px;
-    height: 1px;
-    background:black;
-    margin: auto;
-  }
-  
+}
 
-  .pricing-list {
+
+
+.pricing-list {
+
+
 
     list-style: none;
-    margin-left: 0;
-    padding-left: 0;
+
+    margin-left: 10px;
+
+    padding-left: 10;
+
     padding: 10px 20px;
-  }
 
-  .pricing-list li {
-    margin: 8px 0;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    color: #344;
-    text-align: center;
-  }
+}
+.table3 .pricing-header {
 
-  .border {
-    width: 100px;
-    height: 0px;
-    background: #ddd;
-    margin: auto;
-  }
-
-  .pricing-table a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
-    transition: .2s linear;
-  }
-
-  .pricing-table a:hover {
-    
-    border-color: black;
-  }
-
-  .table1 .pricing-header {
     background: white;
-  }
 
-  .table2 .pricing-header {
-    background: white;
-  }
-
-  .table3 .pricing-header {
-    background: white;
-  }
-
-/* fond des différentes rubriques*/
-  .table1 a {
-    background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    border-radius: 10px;
-    color: #000000;
-  }
-
-  .table2 a {
-    background-image: url(img/rubriques/rubrique_installation.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-y: 150px;
-    background-position-x: 0px;
-    border-radius: 10px;
-  }
-
-  .table3 a {
-    background-image: url(img/rubriques/rubrique_maintenance.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-y: 0%;
-    background-position-x: 0%;
-    border-radius: 10px;
-  }
-
-  .table1 a:hover { 
-   resize: 500px;
-    overflow: auto;
-    border-radius: 10px;
-    background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
-    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-    background-size:cover;
-  }
-
-  .table2 a:hover {
-    resize: 500px;
-    overflow: auto;
-    border-radius: 10px;
-    background-image: url(img/rubriques/rubrique_installation.jpg);
-    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-    background-size:cover;
-  }
-
-  .table3 a:hover {
-    resize: 500px;
-    overflow: auto;
-    border-radius: 10px;
-    background-image: url(img/rubriques/rubrique_maintenance.jpg);
-    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-    background-size:cover;
-  }
-
-  .pricing-table {
-    flex: 100%;
-  }
+}
   
   /*================================================================================================================================================================================== */
   /*Background de la page================================================================================================================================================================================== */
