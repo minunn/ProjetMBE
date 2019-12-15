@@ -17,13 +17,13 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="Set()"> 
   <nav id="nav">
     <ul>
-      <li><a href="#">Mentions légales</a></li>
-      <li><a href="#">Partenaires</a></li>
-      <li><a href="#">Qui sommes-nous ?</a></li>
-      <li><a href="#">Tarifs</a></li>
+      <li><a href="mentions.html">Mentions légales</a></li>
+      <li><a href="partenaires.html">Partenaires</a></li>
+      <li><a href="Historiques.html">Qui sommes-nous ?</a></li>
+      <li><a href="tarif.html">Tarifs</a></li>
       <li><span class="submenu">Services</span>
         <ul class="submenu">
           <li><a href="#2">Intervention rapide</a></li>
@@ -31,7 +31,7 @@
           <li><a href="#4">Maintenance</a></li>
         </ul>
       </li>
-      <li class="last"><a href="#">Accueil</a></li>
+      <li class="last"><a href="index.html">Accueil</a></li>
     </ul>
   </nav><!-- end of #nav -->
   <div class="logo">
@@ -70,96 +70,112 @@
     <input type="text" class="contact-form-text" placeholder="Prénom"required>
     <input type="email" class="contact-form-text" placeholder="Email" required>
     <input type="text" class="contact-form-text" placeholder="Téléphone"required>
-    <div class="toolbar">
-      <ul class="tool-list">
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command='justifyLeft'
-            class="tool--btn">
-            <i class=' fas fa-align-left'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command='justifyCenter' 
-            class="tool--btn">
-            <i class=' fas fa-align-center'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="bold" 
-            class="tool--btn">
-            <i class=' fas fa-bold'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="italic"
-            class="tool--btn">
-            <i class=' fas fa-italic'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="underline"
-            class="tool--btn">
-            <i class=' fas fa-underline'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="insertOrderedList"
-            class="tool--btn">
-            <i class=' fas fa-list-ol'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="insertUnorderedList"
-            class="tool--btn">
-            <i class=' fas fa-list-ul'></i>
-          </button>
-        </li>
-        <li class="tool">
-          <button 
-            type="button" 
-            data-command="createlink" 
-            class="tool--btn">
-            <i class=' fas fa-link'></i>
-          </button>
-        </li>
-      </ul>
-    </div>
     
-    <div id="output" contenteditable="true"></div>
+      <select id="fonts" class="select" onchange="fontEdit('fontname',this[this.selectedIndex].value)">
+      <option value="Arial">Police</option>
+      <option value="Arial">Arial</option>
+      <option value="Courier New">Courier New</option>
+      <option value="Monotype Corsiva">Monotype</option>
+      <option value="Tahoma">Tahoma</option>
+      <option value="Times">Times</option>
+      </select>
+      <select id="size" class="select" onchange="fontEdit('fontsize',this[this.selectedIndex].value)">
+      <option value="0">Taille</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      </select>
+      <select id="color" class="select" onchange="fontEdit('ForeColor',this[this.selectedIndex].value)" >
+      <option value="color">Couleur</option>
+      <option style="color: black;" value="black">Noir</option>
+      <option style="color: red;" value="red">Rouge</option>
+      <option style="color: rgb(59, 121, 192);" value="blue">Bleu</option>
+      <option style="color: rgb(49, 190, 49);" value="green">Vert</option>
+      <option style="color: #e965bd;" value="pink">Rose</option>
+      </select> 
+<iframe id="textEditor" style="width: 600px; height: 170px;"  class="contact-form-text">
+</iframe>
     <input type="submit" class="contact-form-btn" value="Envoyer">
   </form><br>
 </div>
 </div>
 </div>
 <script type="text/javascript">
-let output = document.getElementById('output');
-let buttons = document.getElementsByClassName('tool--btn');
-for (let btn of buttons) {
-  btn.addEventListener('click', () => {
-    let cmd = btn.dataset['command'];
-    if(cmd === 'createlink') {
-      let url = prompt("Enter the link here: ", "http:\/\/");
-      document.execCommand(cmd, false, url);
-    } else {
-      document.execCommand(cmd, false, null);
-    }
-  })
+  var isDesignMode = true;
+function fontEdit(command, y)
+{
+switch (command)
+{
+case 'insertunorderedlist':
+if (document.getElementById('insertunorderedlist').src.toString().indexOf('over') != -1)
+ document.getElementById('insertunorderedlist');
+else
+ document.getElementById('insertunorderedlist');
+break;
+case 'outdent':
+if (document.getElementById('outdent').src.toString().indexOf('over') != -1)
+ document.getElementById('outdent');
+else
+ document.getElementById('outdent');
+break;
+case 'indent':
+if (document.getElementById('indent').src.toString().indexOf('over') != -1)
+ document.getElementById('indent');
+else
+ document.getElementById('indent');
+break;
+case 'default':
+break;
+}
+getIFrameDocument("textEditor").execCommand(command, "", y);
+textEditor.focus();
+}
+
+function ChangeMode()
+{
+if (isDesignMode == true)
+{
+isDesignMode = false;
+document.getElementById('mode').src = 'images/mode.html.gif';
+document.getElementById('mode').title = 'HTML View';
+Encoder.EncodeType = "entity";
+var encoded = Encoder.htmlEncode(getIFrameDocument("textEditor").body.innerHTML);
+getIFrameDocument("textEditor").body.innerHTML = encoded;
+}
+else
+{
+isDesignMode = true;
+document.getElementById('mode').src = 'images/mode.design.gif';
+document.getElementById('mode').title = 'Design View';
+var decoded = Encoder.htmlDecode(getIFrameDocument("textEditor").body.innerHTML);
+getIFrameDocument("textEditor").body.innerHTML = decoded;
+}
 }
 </script>
+<script type="text/javascript">
+  function Set()
+  {
+      getIFrameDocument("textEditor").designMode = "On";
+      getIFrameDocument("textEditor").focus();
+  }
+  
+  function getIFrameDocument(editor)
+  {
+      // If Fire fox Mozilla
+      if (document.getElementById(editor).contentDocument)
+      {
+          return document.getElementById(editor).contentDocument;
+      }
+      // If Internet Explorer
+      else
+      {
+          // IE
+          return document.frames[editor].document;
+      }
+  }
+  </script>
 
 
   <!-- footer de la page -->

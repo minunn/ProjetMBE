@@ -483,6 +483,8 @@ p {
     
     .Rebr {
       font-size: 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -492,7 +494,8 @@ p {
     }
     
     .Rebr span {
-      font-size: 17px;
+      font-size: 22px;
+      font-family: 'Montserrat', sans-serif;
     }
     
     .title {
@@ -504,12 +507,14 @@ p {
       text-align: center;
       padding: 8px 0;
       font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
     }
     .pricing-table a {
       display: block;
       width: 100%;
       height: 100%;
       font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
       transition: .2s linear;
     }
     
