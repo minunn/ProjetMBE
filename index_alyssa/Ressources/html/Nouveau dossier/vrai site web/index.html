@@ -7,7 +7,7 @@
   <!-- css page accueil -->
   <link rel="stylesheet" href="menu.css" />
 
-  <link rel="stylesheet" href="formulaires.css">
+  <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- css icon fontawesome -->
   <script src="https://kit.fontawesome.com/701037d095.js" crossorigin="anonymous"></script>
@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
 </head>
 
-<body onload="Set()"> 
+<body>
   <nav id="nav">
     <ul>
       <li><a href="mentions.html">Mentions légales</a></li>
@@ -35,7 +35,7 @@
     </ul>
   </nav><!-- end of #nav -->
   <div class="logo">
-    <img src="img/logo_MBE_bleu_withBackground.png" height="100px" width="200px" />
+    <img src="img/MBE/logo_MBE_bleu_withBackground.png" height="100px" width="200px" />
   </div>
   <!--Slider du haut de page -->
   <div class="section-top">
@@ -52,34 +52,74 @@
   <div id="down">
   </div>
   <!-- Nos 3 Rubriques -->
-   <div class="container">
-        <div class="pricing-table table3">
-                  <div class="pricing-header">
-                    <div class="Rebr"><br><br><span>
-  <h1>Formulaire de contact</h1><br>
+  <div class="container">
+    <div class="pricing-table table1">
+      <!-- permet d'aller sur la page intervention rapides -->
+      <a class="notrebutton" href="#">
+        <div class="pricing-header">
+          <div class="Rebr"><br><br><span>
+              <center>Intervention Rapide</center>
+            </span></div>
+          <div class="title"></div>
+        </div>
+        <ul class="pricing-list">
+          <center><img src="img/icons/eclair.png" height="50px" width="50px" /></center>
+          <li>Electricité</li>
+          <div class="border"></div>
+          <center><img src="img/icons/Clim.png" height="50px" width="50px" /></center>
+          <li>Climatisation</li>
+          <div class="border"></div>
+          <center><img src="img/icons/clef.png" height="50px" width="50px" /></center>
+          <li>Serrurerie</li>
+        </ul><br>
+    </div>
+    </a>
 
-</div>
-</div>
-  <form class="contact-form" action="" method="post" >
-    <center>  <SELECT name="rubrique" style="width: 600px; height: 40px;" class="liste">
-          <OPTION class="contact-form-text">Installation</OPTION>
-          <OPTION class="contact-form-text">Contrat de maintenance</OPTION>
-          <OPTION class="contact-form-text">Intervention rapide</OPTION>
-      </SELECT></center>
-    <input type="text" class="contact-form-text" placeholder="Nom"required>
-    <input type="text" class="contact-form-text" placeholder="Prénom"required>
-    <input type="text" class="contact-form-text" placeholder="Adresse"required>
-    <input type="email" class="contact-form-text" placeholder="Email" required>
-    <input type="text" class="contact-form-text" placeholder="Téléphone"required>
-    
-<textarea id="textEditor" style="width: 600px; height: 170px;"  class="contact-form-text" placeholder="Pourquoi nous contactez-vous?"required>
-</textarea>
-    <input type="submit" class="contact-form-btn" value="Envoyer">
-  </form><br>
-</div>
-</div>
-</div>
-
+    <div class="pricing-table table2">
+      <!-- permet d'aller sur la page Installations -->
+      <a href="#">
+        <div class="pricing-header">
+          <div class="Rebr"><br><br><span>
+              <center>Installation</center>
+            </span></div>
+          <div class="title"></div>
+        </div>
+        <ul class="pricing-list">
+          <center><img src="img/icons/eclair.png" height="50px" width="50px" /></center>
+          <li>Electricité</li>
+          <div class="border"></div>
+          <center><img src="img/icons/Clim.png" height="50px" width="50px" /></center>
+          <li>Climatisation</li>
+          <div class="border"></div>
+          <center><img src="img/icons/clef.png" height="50px" width="50px" /></center>
+          <li>Serrurerie</li>
+        </ul>
+        <br>
+    </div>
+    </a>
+    <div class="pricing-table table3">
+      <!-- permet d'aller sur la page Contrat de maintenance -->
+      <a class="notrebutton" href="#">
+        <div class="pricing-header">
+          <div class="Rebr"><br><br><span>
+              <center>maintenance</center>
+            </span></div>
+          <div class="title"></div>
+        </div>
+        <ul class="pricing-list">
+          <center><img src="img/icons/Clim.png" height="50px" width="50px" /></center>
+          <li>Climatisation</li>
+          <div class="border"></div>
+          <center><img src="img/icons/portail.png" height="50px" width="50px" /></center>
+          <li>Portail, autre</li>
+          <div class="border"></div>
+          <center><img src="img/icons/interphone.png" height="50px" width="50px" /></center>
+          <li>Interphone</li>
+        </ul>
+        <br>
+    </div>
+  </div>
+  </a>
 
   <!-- footer de la page -->
   <footer class="footer-distributed">
@@ -104,16 +144,16 @@
 
     <div class="footer-center">
       <div>
-        <img src="img/icon_loc.png" height="50px" width="50px" />
+        <img src="img/icons/icon_loc.png" height="50px" width="50px" />
         <p>Siège Monteux Bâtiment HIBISCUS<br> 90 Impasse des Jasmins BP 45 <br>84170 Monteux Vaucluse</p>
       </div>
       
       <div>
-          <img src="img/icon_tel.png" height="50px" width="50px" />
+          <img src="img/icons/icon_tel.png" height="50px" width="50px" />
         <p><br>Mobile : +33 (0)7 69 77 90 87<br>Tél : +33 (0)4 90 34 59 03<br>Fax : +33 (0)9 57 14 27 79</p>
       </div>
       <div>
-        <img src="img/icon_mail.png" height="50px" width="50px" />
+        <img src="img/icons/icon_mail.png" height="50px" width="50px" />
         <p><a href="">Email : mbemonteux@gmail.com</a></p>
       </div>
     </div>

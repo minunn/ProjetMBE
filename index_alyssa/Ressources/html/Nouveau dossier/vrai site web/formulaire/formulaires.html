@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap" rel="stylesheet">
 </head>
 
-<body onload="Set()"> 
+<body> 
   <nav id="nav">
     <ul>
       <li><a href="mentions.html">Mentions légales</a></li>
@@ -61,21 +61,18 @@
 </div>
 </div>
   <form class="contact-form" action="" method="post" >
-    <center>  <SELECT name="rubrique" style="width: 600px; height: 40px;" class="liste">
+      <SELECT name="rubrique">
           <OPTION class="contact-form-text">Installation</OPTION>
           <OPTION class="contact-form-text">Contrat de maintenance</OPTION>
           <OPTION class="contact-form-text">Intervention rapide</OPTION>
-      </SELECT></center>
+      </SELECT>
     <input type="text" class="contact-form-text" placeholder="Nom"required>
     <input type="text" class="contact-form-text" placeholder="Prénom"required>
-    <input type="text" class="contact-form-text" placeholder="Adresse"required>
     <input type="email" class="contact-form-text" placeholder="Email" required>
     <input type="text" class="contact-form-text" placeholder="Téléphone"required>
-    
-<textarea id="textEditor" style="width: 600px; height: 170px;"  class="contact-form-text" placeholder="Pourquoi nous contactez-vous?"required>
-</textarea>
+    <textarea type="text" class="contact-form-text" placeholder="Votre message"required></textarea>
     <input type="submit" class="contact-form-btn" value="Envoyer">
-  </form><br>
+    </form><br>
 </div>
 </div>
 </div>

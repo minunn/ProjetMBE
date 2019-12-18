@@ -437,163 +437,96 @@ p {
 /*================================================================================================================================================================================== */
 /*LES 3 RUBRIQUES================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
- /*===============================================LES 3 RUBRIQUES=================================================================================================================================== */
-  
 
-  
-
-  
- .content p {
-  text-align: justify;
-}
-
-
-.container {
-
-  max-width: 1500px;
-  margin: auto;
-  padding: 40px;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
-
-
-.pricing-table {
-  background-image: url(img/formulaire.jpg);
-  background-repeat: no-repeat;
-  background-size:cover;
-  flex: 1;
-  margin: 60px;
-  text-transform: uppercase;
-
-  border-radius: 10px;
-  border-width: 2,5px;
-  border-style: solid;
-  border-color: black;
-  box-shadow: 0 0 10px 4px black;
-}
-
-
-.pricing-header {
-
-  z-index: 0;
-  border-radius: 10px;
-  color: black;
-  margin-bottom: 20px;
-  border-width: 2,5px;
-  border-style: solid;
-  border-color: black;
-
-}
-
-.Rebr {
-  font-size: 40px;
-  font-family: 'Montserrat', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 0;
-  border-radius: 10px;
-}
-
-.Rebr span {
-  font-size: 22px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.title {
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
-  width: 80%;
-  max-width: 360px;
-  text-align: center;
-  padding: 8px 0;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-}
-.pricing-table a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  font-family: 'Montserrat', sans-serif;
-  transition: .2s linear;
-}
-
-.pricing-table a:hover {
-  border-radius: 30px;
-  border-color: black;
-}
-
-
-.table3 .pricing-header {
-  background-color: white;
-}
-
-
-.contact-form{
-  max-width: 600px;
-  margin: auto;
-  padding: 0 10px;
-  overflow: hidden;
-  
-}
-.liste{
-  border-radius: 20px;
-  border-width: 2px;
-		border-style: solid;
-    border-color: black;
-    box-sizing: border-box;
-}
-.liste:focus{
-  box-shadow: 0 0 10px 4px black;
-}
-.contact-form-text{
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 16px 0;
-  border: 0;
-  background: white;
-  padding: 20px 40px;
-  outline: none;
-  color: rgb(20, 9, 9);
-  transition: 0.5s;
-  border-radius: 20px;
-  border-width: 2px;
-		border-style: solid;
-    border-color: black;
+.content p {
+      text-align: justify;
+      border-width: thin;
+          border-style: solid;
+          border-color: orange;
+    }
     
-}
-.contact-form-text:focus{
-  box-shadow: 0 0 10px 4px black;
-}
-textarea.contact-form-text{
-  resize: none;
-  height: 120px;
-}
-.contact-form-btn{
-  float: right;
-  border: 0;
-  background: white;
-  color: black;
-  padding: 12px 50px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-  border-width: 2px;
-		border-style: solid;
-    border-color: black;
-
-}
-.contact-form-btn:hover{
-  background: #97c5eB;
-  color:white;
-}
-
+    
+    .container {
+    
+      max-width: 1500px;
+      margin: auto;
+      padding: 40px;
+      display: flex;
+      flex-wrap: wrap;
+    
+    }
+    
+    .pricing-table {
+      background-repeat: no-repeat;
+      background-size:cover;
+      flex: 1;
+      margin: 60px;
+      text-transform: uppercase;
+    
+      border-radius: 10px;
+      border-width: 2,5px;
+          border-style: solid;
+          border-color: black;
+    }
+    
+    .pricing-header {
+    
+      z-index: 0;
+      border-radius: 10px;
+      color: black;
+      margin-bottom: 20px;
+      border-width: 2,5px;
+          border-style: solid;
+          border-color: black;
+    
+    }
+    
+    .Rebr {
+      font-size: 40px;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 0;
+    
+      border-radius: 10px;
+    }
+    
+    .Rebr span {
+      font-size: 22px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    
+    .title {
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      width: 80%;
+      max-width: 360px;
+      text-align: center;
+      padding: 8px 0;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .pricing-table a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font-size: 14px;
+      font-family: 'Montserrat', sans-serif;
+      transition: .2s linear;
+    }
+    
+    .pricing-table a:hover {
+      border-radius: 30px;
+      border-color: black;
+    }
+  
+    
+    .table3 .pricing-header {
+      background: white;
+    }
 
 /*================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
@@ -638,6 +571,115 @@ textarea.contact-form-text{
     margin-left: 0;
   }
 
+  /*================================================================================================================================================================================== */
+  /*LES 3 RUBRIQUES================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+
+.container {
+
+
+
+    max-width: 1500px;
+
+    margin: auto;
+
+    padding: 40px;
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+
+.pricing-table {
+
+    background-image: url(historique.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex: 1;
+
+    margin: 110px;
+    border-radius: 10px;
+    border-width: 2,5px;
+    border-style: solid;
+    border-color: black;
+
+}
+
+.pricing-header {
+    z-index: 0;
+    color: black;
+    border-radius: 10px;
+    border-width: 2,5px;
+  border-style: solid;
+  border-color: black;
+
+
+}
+
+.Rebr {
+
+    font-size: 40px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 40px 0;
+
+}
+
+
+.Rebr span {
+
+    font-size: 30px;
+    list-style-type: none; 
+
+}
+
+
+.title {
+
+    bottom: 0;
+
+    left: 50%;
+
+    transform: translate(-50%, 50%);
+
+    width: 80%;
+
+    max-width: 360px;
+
+    text-align: center;
+
+    padding: 8px 0;
+
+    font-size: 14px;
+
+}
+
+
+
+.pricing-list {
+
+
+
+    list-style: none;
+
+    margin-left: 10px;
+
+    padding-left: 10;
+
+    padding: 10px 20px;
+
+}
+.table3 .pricing-header {
+
+    background: white;
+
+}
   
   /*================================================================================================================================================================================== */
   /*Background de la page================================================================================================================================================================================== */

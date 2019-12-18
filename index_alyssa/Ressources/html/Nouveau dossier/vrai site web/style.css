@@ -5,7 +5,7 @@
 
 /* Partie footer  avec fond bleu du footer */
 .footer-distributed {
-  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/background.jpg);
+  background-image:linear-gradient( top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/fond/background.jpg);
   box-sizing: border-box;
   width: 100%;
   text-align: left;
@@ -181,7 +181,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%),   url(img/motifs_MBE_small.jpg);
+  background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%),   url(img/MBE/motifs_MBE_small.jpg);
 width: 100%;
 }
 
@@ -437,60 +437,71 @@ p {
 /*================================================================================================================================================================================== */
 /*LES 3 RUBRIQUES================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
- /*===============================================LES 3 RUBRIQUES=================================================================================================================================== */
-  
 
-  
 
-  
- .content p {
-  text-align: justify;
+a {
+  text-decoration: none;
+  color: black;
 }
 
+.content {
+  padding: 0 20px;
+}
+
+.content img {
+  width: 100%;
+  max-width: 700px;
+  margin: 20px 0;
+}
+
+.content p {
+  text-align: justify;
+  border-width: thin;
+  border-style: solid;
+  border-color: orange;
+}
 
 .container {
-
   max-width: 1500px;
   margin: auto;
   padding: 40px;
   display: flex;
   flex-wrap: wrap;
-
 }
 
-
-
+/* Partie bas des rebrique */
+/* et bord autour des rebriques*/
 .pricing-table {
-  background-image: url(img/formulaire.jpg);
   background-repeat: no-repeat;
-  background-size:cover;
-  flex: 1;
-  margin: 60px;
-  text-transform: uppercase;
-
-  border-radius: 10px;
-  border-width: 2,5px;
-  border-style: solid;
-  border-color: black;
-  box-shadow: 0 0 10px 4px black;
+    background-size:cover;
+    flex: 1;
+    margin: 50px;
+    text-transform: uppercase;
+  
+    border-radius: 14px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
 }
 
-
+/* Partie haut des rebrique */
+/* et bord haut des rebriques*/
 .pricing-header {
-
   z-index: 0;
   border-radius: 10px;
   color: black;
   margin-bottom: 20px;
-  border-width: 2,5px;
+  border-width: 2.5px;
   border-style: solid;
   border-color: black;
 
 }
 
+/* titre des rebrique*/
 .Rebr {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,6 +514,7 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* nom des parties dans les rebriques (bas) des rebrique*/
 .title {
   bottom: 0;
   left: 50%;
@@ -513,7 +525,41 @@ p {
   padding: 8px 0;
   font-size: 14px;
   font-family: 'Montserrat', sans-serif;
+  
 }
+  
+.border {
+  width: 80px;
+  height: 1px;
+  background:black;
+  margin: auto;
+  
+}
+
+.pricing-list {
+  
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding: 10px 20px;
+}
+
+.pricing-list li {
+  margin: 8px 0;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  color: #344;
+  text-align: center;
+  font-weight: bold;
+}
+
+.border {
+  
+  width: 80px;
+  height: 0px;
+  margin: auto;
+}
+
 .pricing-table a {
   display: block;
   width: 100%;
@@ -528,72 +574,74 @@ p {
   border-color: black;
 }
 
+.table1 .pricing-header {
+  background: white;
+}
+
+.table2 .pricing-header {
+  background: white;
+}
 
 .table3 .pricing-header {
-  background-color: white;
+  background: white;
 }
 
-
-.contact-form{
-  max-width: 600px;
-  margin: auto;
-  padding: 0 10px;
-  overflow: hidden;
+/* fond des différentes rubriques*/
+.table1 a {
+  background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
   
-}
-.liste{
-  border-radius: 20px;
-  border-width: 2px;
-		border-style: solid;
-    border-color: black;
-    box-sizing: border-box;
-}
-.liste:focus{
-  box-shadow: 0 0 10px 4px black;
-}
-.contact-form-text{
-  display: block;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 16px 0;
-  border: 0;
-  background: white;
-  padding: 20px 40px;
-  outline: none;
-  color: rgb(20, 9, 9);
-  transition: 0.5s;
-  border-radius: 20px;
-  border-width: 2px;
-		border-style: solid;
-    border-color: black;
-    
-}
-.contact-form-text:focus{
-  box-shadow: 0 0 10px 4px black;
-}
-textarea.contact-form-text{
-  resize: none;
-  height: 120px;
-}
-.contact-form-btn{
-  float: right;
-  border: 0;
-  background: white;
-  color: black;
-  padding: 12px 50px;
-  border-radius: 20px;
-  cursor: pointer;
-  transition: 0.5s;
-  border-width: 2px;
-		border-style: solid;
-    border-color: black;
-
-}
-.contact-form-btn:hover{
-  background: #97c5eB;
-  color:white;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-position-x: 0%;
+  border-radius: 10px;
+  color: #000000;
 }
 
+.table2 a {
+  background-image: url(img/rubriques/rubrique_installation.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: 150px;
+  background-position-x: -100px;
+  border-radius: 10px;
+}
+
+.table3 a {
+  background-image: url(img/rubriques/rubrique_maintenance.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position-y: 0%;
+  background-position-x: 0%;
+  border-radius: 10px;
+}
+
+.table1 a:hover {
+  resize: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
+  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+  background-size:cover;
+}
+
+.table2 a:hover {
+  resize: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  background-image: url(img/rubriques/rubrique_installation.jpg);
+  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+  background-size:cover;
+}
+
+.table3 a:hover {
+  resize: 500px;
+  overflow: auto;
+  border-radius: 10px;
+  background-image: url(img/rubriques/rubrique_maintenance.jpg);
+  box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+  background-size:cover;
+}
 
 /*================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
@@ -638,6 +686,210 @@ textarea.contact-form-text{
     margin-left: 0;
   }
 
+  /*================================================================================================================================================================================== */
+  /*LES 3 RUBRIQUES================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+
+  .content {
+    padding: 0 20px;
+  }
+
+  .content img {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px 0;
+  }
+
+  .content p {
+    text-align: justify;
+    border-width: thin;
+		border-style: solid;
+		border-color: orange;
+  }
+
+
+  .container {
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+/* Partie bas des rebrique */
+/* et bord autour des rebriques*/
+  .pricing-table {
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex: 1;
+    margin: 60px;
+    text-transform: uppercase;
+  
+    border-radius: 15px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
+  }
+
+/* Partie haut des rebrique */
+/* et bord haut des rebriques*/
+  .pricing-header {
+    z-index: 0;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 20px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
+
+  }
+
+  /* titre des rebrique*/
+  .Rebr {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  
+    border-radius: 10px;
+  }
+
+  .Rebr span {
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  /* nom des parties dans les rebriques (bas) des rebrique*/
+  .title {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+    max-width: 360px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .border {
+    width: 80px;
+    height: 1px;
+    background:black;
+    margin: auto;
+  }
+  
+
+  .pricing-list {
+
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+    padding: 10px 20px;
+  }
+
+  .pricing-list li {
+    margin: 8px 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    color: #344;
+    text-align: center;
+  }
+
+  .border {
+    width: 100px;
+    height: 0px;
+    background: #ddd;
+    margin: auto;
+  }
+
+  .pricing-table a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .2s linear;
+  }
+
+  .pricing-table a:hover {
+    
+    border-color: black;
+  }
+
+  .table1 .pricing-header {
+    background: white;
+  }
+
+  .table2 .pricing-header {
+    background: white;
+  }
+
+  .table3 .pricing-header {
+    background: white;
+  }
+
+/* fond des différentes rubriques*/
+  .table1 a {
+    background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    border-radius: 10px;
+    color: #000000;
+  }
+
+  .table2 a {
+    background-image: url(img/rubriques/rubrique_installation.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: 150px;
+    background-position-x: 0px;
+    border-radius: 10px;
+  }
+
+  .table3 a {
+    background-image: url(img/rubriques/rubrique_maintenance.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: 0%;
+    background-position-x: 0%;
+    border-radius: 10px;
+  }
+
+  .table1 a:hover { 
+   resize: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+    background-size:cover;
+  }
+
+  .table2 a:hover {
+    resize: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    background-image: url(img/rubriques/rubrique_installation.jpg);
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+    background-size:cover;
+  }
+
+  .table3 a:hover {
+    resize: 500px;
+    overflow: auto;
+    border-radius: 10px;
+    background-image: url(img/rubriques/rubrique_maintenance.jpg);
+    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
+    background-size:cover;
+  }
+
+  .pricing-table {
+    flex: 100%;
+  }
   
   /*================================================================================================================================================================================== */
   /*Background de la page================================================================================================================================================================================== */

@@ -1,0 +1,845 @@
+/* Partie footer  */
+
+.contact-section h1{
+  text-align: center;
+  color: black;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+  
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: white;
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(20, 9, 9);
+  transition: 0.5s;
+  border-radius: 20px;
+  border-width: 2px;
+		border-style: solid;
+		border-color: black;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px black;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: white;
+  color: black;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-width: 2px;
+		border-style: solid;
+		border-color: black;
+}
+.contact-form-btn:hover{
+  background: rgb(134, 179, 238);
+}
+
+
+/* The footer is fixed to the bottom of the page */
+
+
+
+
+.footer-distributed {
+    background-color: #2c292f;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer left */
+  
+  .footer-distributed .footer-left {
+    width: 30%;
+  }
+  
+  .footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+  }
+  
+  /* The company logo */
+  
+  .footer-distributed .footer-left img {
+    width: 30%;
+  }
+  
+  .footer-distributed h3 span {
+    color: #ffffff;
+  }
+  
+  /* Footer links */
+  
+  .footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+  }
+  
+  .footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer-distributed .footer-company-name {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  /* Footer Center */
+  
+  .footer-distributed .footer-center {
+    width: 35%;
+  }
+  
+  
+  .footer-distributed .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-distributed .footer-center p a {
+    color: #1c6ae0;
+    text-decoration: none;
+    ;
+  }
+  
+  
+  /* Footer Right */
+  
+  .footer-distributed .footer-right {
+    width: 30%;
+  }
+  
+  .footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .footer-distributed .footer-icons {
+    margin-top: 25px;
+  }
+  
+  .footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+  
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+  
+    margin-right: 3px;
+    margin-bottom: 5px;
+  }
+  
+  .Quali-img {
+    
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Quali-img  a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    transition: .2s linear;
+  }
+  
+  .Quali-img a:hover {
+    border-radius: 30px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /* Here is the code for Responsive Footer */
+  /* You can remove below code if you don't want Footer to be responsive */
+  
+  
+  @media (max-width: 880px) {
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i {
+      margin-left: 0;
+    }
+  
+  }
+  
+  /*===============================================Background=================================================================================================================================== */
+  
+  body {
+    background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+  }
+  
+  /*===============================================Flèche qui va vert le bas=================================================================================================================================== */
+  
+  html {
+  
+    scroll-behavior: smooth;
+  }
+  
+  a {
+  
+    text-decoration: none;
+    color: black;
+  }
+  
+  
+  #godown {
+    display: inline-block;
+    padding: 0.35em 1.2em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    transition: all 0.2s;
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+  }
+  
+  #down {
+    margin-top: 0%;
+    padding-bottom: 0%;
+  }
+  
+  /*===============================================Slidder de la page =================================================================================================================================== */
+  /*#slider {
+      overflow: hidden;
+  }
+  #slider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      animation: 20s slider infinite;
+  }
+  #slider figure img {
+      width: 20%;
+      float: left;
+  }
+  
+  @keyframes slider {
+      0% {
+          left: 0;
+      }
+      20% {
+          left: 0;
+      }
+      25% {
+          left: -100%;
+      }
+      45% {
+          left: -100%;
+      }
+      50% {
+          left: -200%;
+      }
+      70% {
+          left: -200%;
+      }
+      75% {
+          left: -300%;
+      }
+      95% {
+          left: -300%;
+      }
+      100% {
+          left: -400%;
+      }
+  */
+  
+  body,html{
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+      width: 100%;
+      height: 100%;
+  }
+  
+  .section-top{
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      background-image: url(image_1.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      animation: slide 50s infinite;
+  }
+  
+  .content{
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      text-transform: uppercase;
+      text-align: center;
+  }
+  
+  .content h1{
+      color:white;
+      font-size:60px;
+      letter-spacing: 16px;
+  
+  }
+  
+  .content a {
+      padding: 10px 24px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+  border-radius: 20px;
+  }
+  
+  p{
+      font-size: 20px;
+      padding: 10px;
+      line-height: 24px;
+  }
+  
+  @keyframes slide{
+      0%{
+          background-image: url(image_1.jpg);
+      }
+      10%{
+          background-image: url(image_2.jpg);
+      }
+      20%{
+          background-image: url(image_3.jpg);
+      }
+      30%{
+          background-image: url(image_4.jpg);
+      }
+      40%{
+          background-image: url(image_5.jpg);
+      }
+      50%{
+          background-image: url(image_6.jpg);
+      }
+      60%{
+          background-image: url(image_7.jpg);
+      }
+  }
+  
+  
+  
+  
+  #section03 a {
+    padding-top: 60px;
+  }
+  #section03 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+  }
+  #section03 a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  #section03 a span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 0 0 rgba(255,255,255,.1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box;
+  }
+  @-webkit-keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      box-shadow: 0 0 0 60px rgba(255,255,255,.1);
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /*===============================================Menu du haut=================================================================================================================================== */
+  
+  
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+  }
+  
+  .header {
+    height: 75px;
+    background: #ffffff;
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  .logo {
+    line-height: 75px;
+    float: right;
+    text-transform: uppercase;
+  }
+  
+  .menu {
+    float: right;
+    line-height: 75px;
+  }
+  
+  .menu a {
+  
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 30px;
+    transition: 0.4s;
+  }
+  
+  .show-menu-btn,
+  .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .show-menu-btn {
+    float: right;
+  }
+  
+  .show-menu-btn i {
+    line-height: 75px;
+  }
+  
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover {
+    color: #5c5b5b;
+  }
+  
+  #chk {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  /*===============================================LES 3 RUBRIQUES=================================================================================================================================== */
+  
+
+  
+
+  
+  .content p {
+    text-align: justify;
+  }
+  
+  
+  .container {
+  
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  
+  
+  .pricing-table {
+    background-image: url(main.png);
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex: 1;
+    margin: 60px;
+    text-transform: uppercase;
+  
+    border-radius: 10px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
+  }
+
+  
+  .pricing-header {
+  
+    z-index: 0;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 20px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
+  
+  }
+  
+  .Rebr {
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+  
+    border-radius: 10px;
+  }
+  
+  .Rebr span {
+    font-size: 17px;
+  }
+  
+  .title {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+    max-width: 360px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  
+  .pricing-table a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    transition: .2s linear;
+  }
+  
+  .pricing-table a:hover {
+    border-radius: 30px;
+    border-color: black;
+  }
+
+  
+  .table3 .pricing-header {
+    background-color: white;
+  }
+  
+  *,
+*:before,
+*:after {
+  box-sizing: border-box;
+  border-radius: 10px;
+  
+}
+
+.toolbar {}
+.tool-list {
+	display: flex;
+	flex-flow: row nowrap;
+	list-style: none;
+	padding: 0;
+	margin: 1rem;
+	overflow: hidden;
+  
+}
+.tool {}
+.tool--btn {
+	display: block;
+	border: none;
+	padding: .5rem;
+  font-size: 20px;
+  
+}
+
+#output {
+	height: 400px; 
+
+	margin: 1rem;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 10px;
+    border-width: 2,5px;
+		border-style: solid;
+		border-color: black;
+}
+  
+  /*=============================================== PARTIE MOBILE=================================================================================================================================== */
+  /*=============================================== PARTIE MOBILE=================================================================================================================================== */
+  /*=============================================== PARTIE MOBILE=================================================================================================================================== */
+  
+  
+  @media screen and (max-width:1100px) {
+  
+    footer {
+      position: static;
+    }
+  
+    header {
+      padding-top: 40px;
+    }
+  
+   
+  
+
+
+    /*================================================================================================================================================================================== */
+  
+  
+  
+    #slider {
+      overflow: hidden;
+    }
+    #slider figure {
+      position: relative;
+      width: 500%;
+      animation: 20s slider infinite;
+    }
+    #slider figure img {
+      width: 20%;
+      float: left;
+    }
+    
+    @keyframes slider {
+      0% {
+        left: 0;
+      }
+      20% {
+        left: 0;
+      }
+      25% {
+        left: -100%;
+      }
+      45% {
+        left: -100%;
+      }
+      50% {
+        left: -200%;
+      }
+      70% {
+        left: -200%;
+      }
+      75% {
+        left: -300%;
+      }
+      95% {
+        left: -300%;
+      }
+      100% {
+        left: -400%;
+      }
+    }
+  
+  
+  
+    /*=============================================== Background de la page=================================================================================================================================== */
+  
+    body {
+      background: linear-gradient(rgb(255, 255, 255)rgb(255, 255, 255)5);
+    }
+  
+    /*=============================================== Flèche qui va vers le bas=================================================================================================================================== */
+  
+    html {
+      scroll-behavior: smooth;
+    }
+  
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  
+    #godown {
+      padding: 0.35em 1.2em;
+      border-radius: 0.12em;
+      box-sizing: border-box;
+      text-decoration: none;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      transition: all 0.2s;
+      display: block;
+      margin: 0.4em auto;
+      color: white;
+      position: absolute;
+      top: 60%;
+      left: 50%;
+      transform: translate(-50%, -20%);
+    }
+  
+    #down {
+      margin-top: 0%;
+      padding-bottom: 0%;
+    }
+  
+    /*================================================================================================================================================================================== */
+    /*=============================================== PARTIE Slidder=================================================================================================================================== */
+  
+  
+  
+    /*================================================================================================================================================================================== */
+  
+    /*=============================================== PARTIE Menu du haut=================================================================================================================================== */
+  
+    .show-menu-btn,
+    .hide-menu-btn {
+      display: block;
+    }
+  
+    .menu {
+  
+      z-index: 50;
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #333;
+      right: -100%;
+      top: 0;
+      text-align: center;
+      padding: 80px 0;
+      line-height: normal;
+      transition: 0.7s;
+    }
+  
+    .menu a {
+      display: block;
+      padding: 20px;
+    }
+  
+    .hide-menu-btn {
+      position: absolute;
+      top: 40px;
+      left: 40px;
+    }
+  
+    #chk:checked~.menu {
+      right: 0;
+    }    /*================================================================================================================================================================================== */
+  }
