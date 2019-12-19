@@ -457,16 +457,18 @@ p {
   }
   
   .pricing-table {
+    background-color: white;
     background-repeat: no-repeat;
     background-size:cover;
     flex: 1;
     margin: 60px;
     text-transform: none;
   
-    border-radius: 10px;
+    border-radius: 24px;
     border-width: 2,5px;
         border-style: solid;
         border-color: black;
+        box-shadow: 0 0 10px 4px black;
   }
   
   .pricing-header {
@@ -535,9 +537,7 @@ p {
     padding: 40px 0;
     transition: 0.4s;
   }
-  .pe:hover{
-    background: #ddd;
-  }
+ 
   .pe img{
     width: 160px;
     height: 160px;
@@ -547,10 +547,7 @@ p {
     font-weight: bolder;
     
   }
-  .p-des{
-    font-style: italic;
-    font-weight: lighter;
-  }
+  
   .p-sm{
     margin-top: 12px;
   }
@@ -621,9 +618,6 @@ p {
 
   .content p {
     text-align: justify;
-    border-width: thin;
-		border-style: solid;
-		border-color: orange;
   }
 
 
@@ -832,3 +826,4 @@ p {
     margin-top: 0%;
     padding-bottom: 0%;
   }
+}

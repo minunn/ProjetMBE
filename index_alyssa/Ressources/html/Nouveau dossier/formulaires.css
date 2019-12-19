@@ -468,7 +468,7 @@ p {
   margin: 60px;
   text-transform: uppercase;
 
-  border-radius: 10px;
+  border-radius: 24px;
   border-width: 2,5px;
   border-style: solid;
   border-color: black;
@@ -661,3 +661,4 @@ textarea.contact-form-text{
     margin-top: 0%;
     padding-bottom: 0%;
   }
+}

@@ -456,9 +456,6 @@ a {
 
 .content p {
   text-align: justify;
-  border-width: thin;
-  border-style: solid;
-  border-color: orange;
 }
 
 .container {
@@ -702,9 +699,6 @@ a {
 
   .content p {
     text-align: justify;
-    border-width: thin;
-		border-style: solid;
-		border-color: orange;
   }
 
 
@@ -725,7 +719,7 @@ a {
     margin: 60px;
     text-transform: uppercase;
   
-    border-radius: 15px;
+    border-radius: 20px;
     border-width: 2,5px;
 		border-style: solid;
 		border-color: black;
@@ -913,3 +907,4 @@ a {
     margin-top: 0%;
     padding-bottom: 0%;
   }
+}
