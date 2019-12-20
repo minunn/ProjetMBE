@@ -128,10 +128,12 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-left: 67px;
 }
 
 .footer-distributed .footer-icons {
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-left:85px;
 }
 
 .footer-distributed .footer-icons a {
@@ -146,9 +148,9 @@
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-
-  margin-right: 3px;
+  margin-right: 8x;
   margin-bottom: 5px;
+  margin-left: 6px;
 }
 
 /* Partie image Quali pac enr pv du footer */
@@ -686,7 +688,7 @@ a {
   /*================================================================================================================================================================================== */
   /*LES 3 RUBRIQUES================================================================================================================================================================================== */
   /*================================================================================================================================================================================== */
-
+  @media screen and (max-width:1100px) {
   .content {
     padding: 0 20px;
   }
@@ -907,4 +909,5 @@ a {
     margin-top: 0%;
     padding-bottom: 0%;
   }
+}
 }

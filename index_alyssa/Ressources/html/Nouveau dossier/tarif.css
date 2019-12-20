@@ -128,10 +128,12 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   margin-bottom: 20px;
+  margin-left: 67px;
 }
 
 .footer-distributed .footer-icons {
-  margin-top: 25px;
+  margin-top: 15px;
+  margin-left:85px;
 }
 
 .footer-distributed .footer-icons a {
@@ -146,9 +148,9 @@
   color: #ffffff;
   text-align: center;
   line-height: 35px;
-
-  margin-right: 3px;
+  margin-right: 8x;
   margin-bottom: 5px;
+  margin-left: 6px;
 }
 
 /* Partie image Quali pac enr pv du footer */
@@ -642,9 +644,7 @@ height:100px;
   /*LES 3 RUBRIQUES================================================================================================================================================================================== */
   /*================================================================================================================================================================================== */
 
-  .content {
-    padding: 0 20px;
-  }
+  
 
   .content img {
     width: 100%;
@@ -663,7 +663,6 @@ height:100px;
   .container {
     max-width: 1500px;
     margin: auto;
-    padding: 40px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -703,7 +702,6 @@ height:100px;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
   
     border-radius: 10px;
   }
@@ -722,7 +720,6 @@ height:100px;
     width: 80%;
     max-width: 360px;
     text-align: center;
-    padding: 8px 0;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
   }
@@ -740,7 +737,6 @@ height:100px;
     list-style: none;
     margin-left: 0;
     padding-left: 0;
-    padding: 10px 20px;
   }
 
   .pricing-list li {
@@ -842,6 +838,8 @@ height:100px;
   .pricing-table {
     flex: 100%;
   }
+}
+
   
   /*================================================================================================================================================================================== */
   /*Background de la page================================================================================================================================================================================== */
@@ -865,4 +863,3 @@ height:100px;
     margin-top: 0%;
     padding-bottom: 0%;
   }
-}

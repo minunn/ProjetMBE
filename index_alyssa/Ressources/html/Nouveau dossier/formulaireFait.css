@@ -1,0 +1,658 @@
+.footer-distributed {
+    background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/background.jpg);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+  }
+  
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  /* Footer partie gauche */
+  
+  .footer-distributed .footer-left {
+    width: 30%;
+  }
+  
+  /* titre du footer avec ces fonts a changer */
+  .footer-distributed h3 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
+  
+  
+  /* Liens du footer */
+  
+  .footer-distributed .footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+  }
+  
+  .footer-distributed .footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .footer-distributed .footer-company-name {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
+  
+  /* Centre du footer */
+  
+  .footer-distributed .footer-center {
+    width: 35%;
+  }
+  
+  
+  .footer-distributed .footer-center i {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 25px 30px;
+    vertical-align: middle;
+  }
+  
+  .footer-distributed .footer-center i.fa-envelope {
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 38px;
+  }
+  
+  .footer-distributed .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 2;
+  }
+  
+  .footer-distributed .footer-center p a {
+    color: #ffffff;
+    text-decoration: none;
+    ;
+  }
+  
+  
+  /* Footer partie droite */
+  
+  .footer-distributed .footer-right {
+    width: 30%;
+  }
+  
+  .footer-distributed .footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+  }
+  
+  .footer-distributed .footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-left: 67px;
+  }
+  
+  .footer-distributed .footer-icons {
+    margin-top: 15px;
+    margin-left:85px;
+  }
+  
+  .footer-distributed .footer-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 8x;
+    margin-bottom: 5px;
+    margin-left: 6px;
+  }
+  
+  /* Partie image Quali pac enr pv du footer */
+  
+  .Quali-img {
+  
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .Quali-img a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .2s linear;
+  }
+  
+  .Quali-img a:hover {
+    border-radius: 30px;
+  }
+  
+  /*================================================================================================================================================================================== */
+  /*BACKGROUND DE LA PAGE================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-image:linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),linear-gradient(to bottom, rgba(255,255,255,0) 10%, rgba(255,255,255,1) 100%),   url(img/motifs_MBE_small.jpg);
+  width: 100%;
+  }
+  
+  /* permet de rendre le scroll de la page plus clean*/
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /*================================================================================================================================================================================== */
+  /*Slidder de la page================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 100%;  
+  }
+  
+  /* image fond du slider + slider en lui meme*/
+  .section-top {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(img/slider/slider_elecBat1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slide 50s infinite;
+    
+  }
+  
+  .content {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align: center;
+    
+  }
+  
+  .content h1 {
+    color: white;
+    font-size: 60px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 16px;
+  }
+  
+  .content a {
+    padding: 10px 24px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    
+  }
+  
+  p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    padding: 10px;
+    line-height: 24px;
+  }
+  
+  /* animation du slider avec % */
+  @keyframes slide {
+    0% {
+      background-image: url(img/slider/slider_elecBat1.jpg);
+    }
+  
+    15% {
+      background-image:url(img/slider/slider_installation2.jpg);
+    }
+  
+    25% {
+      background-image: url(img/slider/slider_clim3.jpg);
+    }
+  
+    35% {
+      background-image: url(img/slider/slider_cuisine4.jpg);
+    }
+  
+    45% {
+      background-image: url(img/slider/slider_lum5.jpg);
+    }
+  }
+  
+  /* flèche qui permet d'aller vers le bas de la page */
+  #section03 a {
+    padding-top: 60px;
+  }
+  
+  #section03 a span {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 70px;
+    height: 70px;
+    margin-left: -23px;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+    
+  }
+  
+  #section03 a span::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: border-box;
+  }
+  
+  #section03 a span::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: '';
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, .1);
+    border-radius: 100%;
+    opacity: 0;
+    -webkit-animation: sdb03 3s infinite;
+    animation: sdb03 3s infinite;
+    box-sizing: border-box;
+  }
+  
+  
+  /* Partie animation de la flèche qui va vers le bas */
+  @-webkit-keyframes sdb03 {
+    0% {
+      opacity: 0;
+    }
+  
+    30% {
+      opacity: 1;
+    }
+  
+    60% {
+      box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  @keyframes sdb03 {
+    0% {
+      opacity: 0;
+      
+    }
+  
+    30% {
+      opacity: 1;
+    }
+  
+    60% {
+      box-shadow: 0 0 0 60px rgba(255, 255, 255, .1);
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 0;
+      
+    }
+  }
+  
+  /*================================================================================================================================================================================== */
+  /*MENU HAUT DE PAGE================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  
+  /* font de haut de page mennu */
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat", sans-serif;
+  }
+  /* fond du menu */
+  .header {
+    height: 75px;
+    background: #ffffff;
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+  }
+  
+  /* logo mbe*/
+  .logo {
+    z-index: 1000;
+    top: -0.2%;
+    position: absolute;
+    line-height: 75px;
+    float: right;
+  }
+  /* position menu */
+  .menu {
+    float: right;
+    line-height: 75px;
+  }
+  
+  
+  .menu a {
+  
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 30px;
+    transition: 0.4s;
+  }
+  /*button menu mobile*/
+  .show-menu-btn,
+  .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 25px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    display: none;
+  }
+  
+  .show-menu-btn {
+    float: right;
+  }
+  
+  .show-menu-btn i {
+    line-height: 75px;
+  }
+  
+  .menu a:hover,
+  .show-menu-btn:hover,
+  .hide-menu-btn:hover {
+    color: #5c5b5b;
+  }
+  
+  #chk {
+    position: absolute;
+    visibility: hidden;
+  }
+  
+  /*================================================================================================================================================================================== */
+  /*LES 3 RUBRIQUES================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+   /*===============================================LES 3 RUBRIQUES=================================================================================================================================== */
+    
+  
+    
+  
+    
+   .content p {
+    text-align: justify;
+  }
+  
+  
+  .container {
+  
+    max-width: 1500px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  
+  
+  .pricing-table {
+    background-image: url(img/formulaire.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    flex: 1;
+    margin: 60px;
+  
+    border-radius: 24px;
+    border-width: 2,5px;
+    border-style: solid;
+    border-color: black;
+    box-shadow: 0 0 10px 4px black;
+  }
+  
+  
+  .pricing-header {
+  
+    z-index: 0;
+    border-radius: 10px;
+    color: black;
+    margin-bottom: 20px;
+    border-width: 2,5px;
+    border-style: solid;
+    border-color: black;
+  
+  }
+  
+  .Rebr {
+    font-size: 40px;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0;
+    border-radius: 10px;
+  }
+  
+  .Rebr span {
+    font-size: 22px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .title {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    width: 80%;
+    max-width: 360px;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .pricing-table a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    transition: .2s linear;
+  }
+  
+  .pricing-table a:hover {
+    border-radius: 30px;
+    border-color: black;
+  }
+  
+  
+  .table3 .pricing-header {
+    background-color: white;
+  }
+  
+  
+  .contact-form{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+    
+  }
+  .liste{
+    border-radius: 20px;
+    border-width: 2px;
+          border-style: solid;
+      border-color: black;
+      box-sizing: border-box;
+  }
+  .liste:focus{
+    box-shadow: 0 0 10px 4px black;
+  }
+  .contact-form-text{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: white;
+    padding: 20px 40px;
+    outline: none;
+    color: rgb(20, 9, 9);
+    transition: 0.5s;
+    border-radius: 20px;
+    border-width: 2px;
+          border-style: solid;
+      border-color: black;
+      
+  }
+  .contact-form-text:focus{
+    box-shadow: 0 0 10px 4px black;
+  }
+  textarea.contact-form-text{
+    resize: none;
+    height: 120px;
+  }
+  .contact-form-btn{
+    border: 0;
+    background: white;
+    color: black;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    border-width: 2px;
+          border-style: solid;
+      border-color: black;
+  
+  }
+  .contact-form-btn:hover{
+    background: #97c5eB;
+    color:white;
+  }
+  
+  
+  /*================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  /*PARTIE MOBILE================================================================================================================================================================================== */
+  /*============================PARTIE MOBILE===================================================================================================================================================== */
+  /*PARTILE MOBILE================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  
+  /*================================================================================================================================================================================== */
+  /*mobile screen 1100px en dessous = partie mobile================================================================================================================================================================================== */
+  /*================================================================================================================================================================================== */
+  
+  @media screen and (max-width:1100px) {
+  
+    /*================================================================================================================================================================================== */
+    /*Partie foooter ================================================================================================================================================================================== */
+    /*================================================================================================================================================================================== */
+  
+    footer {
+      position: static;
+    }
+  
+    header {
+      padding-top: 40px;
+    }
+  
+    .footer-distributed .footer-left,
+    .footer-distributed .footer-center,
+    .footer-distributed .footer-right {
+      display: block;
+      width: 100%;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+  
+    .footer-distributed .footer-center i {
+      margin-left: 0;
+    }
+  
+    
+    /*================================================================================================================================================================================== */
+    /*Background de la page================================================================================================================================================================================== */
+    /*================================================================================================================================================================================== */
+  
+    body {
+     background-image: linear-gradient(to top, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 100%),   url(img/motifs_MBE_small.jpg);
+     }
+  
+  
+     .logo {
+       position: absolute;
+     }
+  
+    /* permet de rendre le scroll de la page plus clean*/
+    html {
+      scroll-behavior: smooth;
+    }
+  
+    #down {
+      margin-top: 0%;
+      padding-bottom: 0%;
+    }
+  }
