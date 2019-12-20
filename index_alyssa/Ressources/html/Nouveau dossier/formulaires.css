@@ -549,6 +549,7 @@ p {
 		border-style: solid;
     border-color: black;
     box-sizing: border-box;
+    width: 600px; height: 40px;
 }
 .liste:focus{
   box-shadow: 0 0 10px 4px black;
@@ -574,7 +575,6 @@ p {
   box-shadow: 0 0 10px 4px black;
 }
 textarea.contact-form-text{
-  resize: none;
   height: 120px;
 }
 .contact-form-btn{
@@ -595,8 +595,30 @@ textarea.contact-form-text{
   background: #97c5eB;
   color:white;
 }
-
-
+.taille{
+  font-size:50px;
+}
+.commentaire{
+  width: 600px; 
+  height: 170px;
+  display: block;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: white;
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(20, 9, 9);
+  transition: 0.5s;
+  border-radius: 20px;
+  border-width: 2px;
+		border-style: solid;
+    border-color: black;
+    
+}
+.commentaire:focus{
+  box-shadow: 0 0 10px 4px black;
+}
 /*================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
@@ -666,4 +688,51 @@ textarea.contact-form-text{
   .footer-distributed .footer-icons {
     margin-left:0px;
   }
+  .taille{
+    font-size:20px;
+  }
+  
+.contact-form-text{
+  display: block;align-items: center;
+  width:  200px;
+  box-sizing: border-box;
+  resize: both;
+  border: 0;
+  background: white;
+  padding: 20px 40px;
+  outline: none;
+  color: rgb(20, 9, 9);
+  transition: 0.5s;
+  border-radius: 20px;
+  border-width: 2px;
+		border-style: solid;
+    border-color: black;
+    
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 10px 4px black;
+}
+textarea.contact-form-text{
+  height: 90px;
+  width: 200px;
+}
+.contact-form-btn{
+  float: right;
+  border: 0;
+  background: white;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  border-width: 2px;
+		border-style: solid;
+    border-color: black;
+
+}
+.liste{
+  width: 200px; height: 40px;
+}
+.commentaire{
+  width:200px; height:60px;
+}
 }
