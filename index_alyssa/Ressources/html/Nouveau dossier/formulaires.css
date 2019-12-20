@@ -663,4 +663,7 @@ textarea.contact-form-text{
     margin-top: 0%;
     padding-bottom: 0%;
   }
+  .footer-distributed .footer-icons {
+    margin-left:0px;
+  }
 }

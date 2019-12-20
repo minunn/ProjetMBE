@@ -553,7 +553,9 @@ tr:nth-child(odd){
   width:200px;
   height:100px;
 }
-
+.taille{
+  font-size: 50px;
+}
 @media only screen and (max-width:900px){
   table, thead, tbody, tr,th,td{
     display: block;
@@ -594,7 +596,12 @@ tr:nth-child(odd){
 width:200px;
 height:100px;
 }
-
+.taille{
+  font-size:20px;
+}
+.ta{
+  font-size: 7px;
+}
 }
 
 /*================================================================================================================================================================================== */
@@ -613,7 +620,7 @@ height:100px;
 /*mobile screen 1100px en dessous = partie mobile================================================================================================================================================================================== */
 /*================================================================================================================================================================================== */
 
-@media screen and (max-width:1100px) {
+@media screen and (max-width:990px) {
 
   /*================================================================================================================================================================================== */
   /*Partie foooter ================================================================================================================================================================================== */
@@ -652,17 +659,9 @@ height:100px;
     margin: 10px 0;
   }
 
-  .content p {
-    text-align: justify;
-    border-width: thin;
-		border-style: solid;
-		border-color: orange;
-  }
 
 
   .container {
-    max-width: 1500px;
-    margin: auto;
     display: flex;
     flex-wrap: wrap;
   }
@@ -670,12 +669,9 @@ height:100px;
 /* Partie bas des rebrique */
 /* et bord autour des rebriques*/
   .pricing-table {
-    background-repeat: no-repeat;
-    background-size:cover;
     flex: 1;
-    margin: 60px;
     text-transform: uppercase;
-  
+  margin-left: 2px; /*pour que la rubrique parte pas en couille à gauche*/
     border-radius: 15px;
     border-width: 2,5px;
 		border-style: solid;
@@ -707,20 +703,18 @@ height:100px;
   }
 
   .Rebr span {
-    font-size: 30px;
+    font-size: 3px;
     font-family: 'Montserrat', sans-serif;
   }
 
   /* nom des parties dans les rebriques (bas) des rebrique*/
   .title {
-    position: absolute;
     bottom: 0;
-    left: 50%;
     transform: translate(-50%, 50%);
     width: 80%;
     max-width: 360px;
     text-align: center;
-    font-size: 14px;
+    font-size: 3px;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -740,20 +734,11 @@ height:100px;
   }
 
   .pricing-list li {
-    margin: 8px 0;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     color: #344;
     text-align: center;
   }
-
-  .border {
-    width: 100px;
-    height: 0px;
-    background: #ddd;
-    margin: auto;
-  }
-
   .pricing-table a {
     display: block;
     width: 100%;
@@ -780,63 +765,12 @@ height:100px;
     background: white;
   }
 
-/* fond des différentes rubriques*/
-  .table1 a {
-    background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-y: 50%;
-    border-radius: 10px;
-    color: #000000;
-  }
-
-  .table2 a {
-    background-image: url(img/rubriques/rubrique_installation.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-y: 150px;
-    background-position-x: 0px;
-    border-radius: 10px;
-  }
-
-  .table3 a {
-    background-image: url(img/rubriques/rubrique_maintenance.jpg);
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position-y: 0%;
-    background-position-x: 0%;
-    border-radius: 10px;
-  }
-
-  .table1 a:hover { 
-   resize: 500px;
-    overflow: auto;
-    border-radius: 10px;
-    background-image: url(img/rubriques/rubrique_interventionRapide.jpg);
-    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-    background-size:cover;
-  }
-
-  .table2 a:hover {
-    resize: 500px;
-    overflow: auto;
-    border-radius: 10px;
-    background-image: url(img/rubriques/rubrique_installation.jpg);
-    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-    background-size:cover;
-  }
-
-  .table3 a:hover {
-    resize: 500px;
-    overflow: auto;
-    border-radius: 10px;
-    background-image: url(img/rubriques/rubrique_maintenance.jpg);
-    box-shadow: 0 25px 25px 0 rgba(0,0,0,0.50), 0 50px 50px 0 rgba(0,0,0,0.50);
-    background-size:cover;
-  }
-
+ 
   .pricing-table {
     flex: 100%;
+  }
+  .footer-distributed .footer-icons {
+    margin-left:0px;
   }
 }
 

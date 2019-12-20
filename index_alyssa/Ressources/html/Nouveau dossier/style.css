@@ -505,7 +505,6 @@ a {
 .Rebr {
   font-size: 40px;
   font-family: 'Montserrat', sans-serif;
-  font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -554,7 +553,6 @@ a {
   font-family: 'Montserrat', sans-serif;
   color: #344;
   text-align: center;
-  font-weight: bold;
 }
 
 .border {

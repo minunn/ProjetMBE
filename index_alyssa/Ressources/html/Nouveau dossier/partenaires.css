@@ -551,7 +551,9 @@ p {
   .p-sm{
     margin-top: 12px;
   }
-
+  .taille{
+    font-size:50px;
+  }
 
   @media screen and (max-width:500px) {
     .pe{
@@ -635,7 +637,7 @@ p {
     background-repeat: no-repeat;
     background-size:cover;
     flex: 1;
-    margin: 60px;
+    margin-left: 0px; 
     text-transform: uppercase;
   
     border-radius: 15px;
@@ -668,9 +670,11 @@ p {
   
     border-radius: 10px;
   }
-
+.taille{
+  font-size:30px;
+}
   .Rebr span {
-    font-size: 30px;
+    font-size: 10px;
     font-family: 'Montserrat', sans-serif;
   }
 
@@ -825,5 +829,8 @@ p {
   #down {
     margin-top: 0%;
     padding-bottom: 0%;
+  }
+  .footer-distributed .footer-icons {
+    margin-left:0px;
   }
 }

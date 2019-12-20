@@ -559,7 +559,9 @@ p {
   .p-sm{
     margin-top: 12px;
   }
-
+.taille{
+  font-size:50px;
+}
 
   @media screen and (max-width:500px) {
     .pe{
@@ -636,8 +638,7 @@ p {
     background-repeat: no-repeat;
     background-size:cover;
     flex: 1;
-
-    margin: 110px;
+    margin-left: 2px; 
     border-radius: 10px;
     border-width: 2,5px;
     border-style: solid;
@@ -742,4 +743,10 @@ p {
     margin-top: 0%;
     padding-bottom: 0%;
   }
+  .footer-distributed .footer-icons {
+    margin-left:0px;
+  }
+.taille{
+  font-size:20px;
+}
 }
