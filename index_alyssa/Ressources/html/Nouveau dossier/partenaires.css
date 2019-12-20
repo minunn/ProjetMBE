@@ -223,7 +223,6 @@ html {
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-transform: uppercase;
   text-align: center;
   
 }
@@ -488,7 +487,6 @@ p {
   .Rebr {
     font-size: 40px;
     font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
     display: flex;
     align-items: center;
     justify-content: center;

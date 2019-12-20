@@ -484,9 +484,8 @@ p {
     }
     
     .Rebr {
-      font-size: 40px;
+      font-size: 30px;
       font-family: 'Montserrat', sans-serif;
-      font-weight: bold;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -496,7 +495,6 @@ p {
     }
     
     .Rebr span {
-      font-size: 22px;
       font-family: 'Montserrat', sans-serif;
     }
     
